@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "acceptedFor": "first-prototype",
+  "cells": {
+    "000-111": {
+      "vehicleId": "car-000-111",
+      "photoId": "car-000-111",
+      "status": "agreed"
+    },
+    "100-101": {
+      "vehicleId": "car-100-101",
+      "photoId": "car-100-101",
+      "status": "agreed"
+    },
+    "101-000": {
+      "vehicleId": "car-101-000",
+      "photoId": "car-101-000",
+      "status": "agreed"
+    },
+    "000-000": {
+      "vehicleId": "car-000-000",
+      "photoId": "car-000-000",
+      "status": "agreed"
+    },
+    "000-001": {
+      "vehicleId": "car-000-001",
+      "photoId": "car-000-001",
+      "status": "agreed"
+    },
+    "000-011": {
+      "vehicleId": "car-000-011",
+      "photoId": "car-000-011",
+      "status": "agreed"
+    },
+    "001-000": {
+      "vehicleId": "car-001-000",
+      "photoId": "car-001-000",
+      "status": "agreed"
+    },
+    "001-010": {
+      "vehicleId": "car-001-010",
+      "photoId": "car-001-010",
+      "status": "agreed"
+    },
+    "001-100": {
+      "vehicleId": "car-001-100",
+      "photoId": "car-001-100",
+      "status": "agreed"
+    },
+    "001-101": {
+      "vehicleId": "car-001-101",
+      "photoId": "car-001-101",
+      "status": "agreed"
+    },
+    "001-111": {
+      "vehicleId": "car-001-111",
+      "photoId": "car-001-111",
+      "status": "agreed"
+    },
+    "010-000": {
+      "vehicleId": "car-010-000",
+      "photoId": "car-010-000",
+      "status": "agreed"
+    },
+    "010-001": {
+      "vehicleId": "car-010-001",
+      "photoId": "car-010-001",
+      "status": "agreed"
+    },
+    "010-010": {
+      "vehicleId": "car-010-010",
+      "photoId": "car-010-010",
+      "status": "agreed"
+    },
+    "010-011": {
+      "vehicleId": "car-010-011",
+      "photoId": "car-010-011",
+      "status": "agreed"
+    },
+    "010-100": {
+      "vehicleId": "car-010-100",
+      "photoId": "car-010-100",
+      "status": "agreed"
+    },
+    "010-111": {
+      "vehicleId": "car-010-111",
+      "photoId": "car-010-111",
+      "status": "agreed"
+    },
+    "011-000": {
+      "vehicleId": "car-011-000",
+      "photoId": "car-011-000",
+      "status": "agreed"
+    },
+    "011-001": {
+      "vehicleId": "car-011-001",
+      "photoId": "car-011-001",
+      "status": "agreed"
+    },
+    "011-010": {
+      "vehicleId": "car-011-010",
+      "photoId": "car-011-010",
+      "status": "agreed"
+    },
+    "011-011": {
+      "vehicleId": "car-011-011",
+      "photoId": "car-011-011",
+      "status": "agreed"
+    },
+    "011-100": {
+      "vehicleId": "car-011-100",
+      "photoId": "car-011-100",
+      "status": "agreed"
+    },
+    "011-110": {
+      "vehicleId": "car-011-110",
+      "photoId": "car-011-110",
+      "status": "agreed"
+    },
+    "100-000": {
+      "vehicleId": "car-100-000",
+      "photoId": "car-100-000",
+      "status": "agreed"
+    },
+    "100-010": {
+      "vehicleId": "car-100-010",
+      "photoId": "car-100-010",
+      "status": "agreed"
+    },
+    "100-011": {
+      "vehicleId": "car-100-011",
+      "photoId": "car-100-011",
+      "status": "agreed"
+    },
+    "100-100": {
+      "vehicleId": "car-100-100",
+      "photoId": "car-100-100",
+      "status": "agreed"
+    },
+    "100-110": {
+      "vehicleId": "car-100-110",
+      "photoId": "car-100-110",
+      "status": "agreed"
+    },
+    "101-010": {
+      "vehicleId": "car-101-010",
+      "photoId": "car-101-010",
+      "status": "agreed"
+    },
+    "101-011": {
+      "vehicleId": "car-101-011",
+      "photoId": "car-101-011",
+      "status": "agreed"
+    },
+    "101-100": {
+      "vehicleId": "car-101-100",
+      "photoId": "car-101-100",
+      "status": "agreed"
+    },
+    "101-101": {
+      "vehicleId": "car-101-101",
+      "photoId": "car-101-101",
+      "status": "agreed"
+    },
+    "101-111": {
+      "vehicleId": "car-101-111",
+      "photoId": "car-101-111",
+      "status": "agreed"
+    },
+    "110-000": {
+      "vehicleId": "car-110-000",
+      "photoId": "car-110-000",
+      "status": "agreed"
+    },
+    "110-001": {
+      "vehicleId": "car-110-001",
+      "photoId": "car-110-001",
+      "status": "agreed"
+    },
+    "110-011": {
+      "vehicleId": "car-110-011",
+      "photoId": "car-110-011",
+      "status": "agreed"
+    },
+    "110-100": {
+      "vehicleId": "car-110-100",
+      "photoId": "car-110-100",
+      "status": "agreed"
+    },
+    "110-101": {
+      "vehicleId": "car-110-101",
+      "photoId": "car-110-101",
+      "status": "agreed"
+    },
+    "110-110": {
+      "vehicleId": "car-110-110",
+      "photoId": "car-110-110",
+      "status": "agreed"
+    },
+    "110-111": {
+      "vehicleId": "car-110-111",
+      "photoId": "car-110-111",
+      "status": "agreed"
+    },
+    "111-000": {
+      "vehicleId": "car-111-000",
+      "photoId": "car-111-000",
+      "status": "agreed"
+    },
+    "111-001": {
+      "vehicleId": "car-111-001",
+      "photoId": "car-111-001",
+      "status": "agreed"
+    },
+    "111-010": {
+      "vehicleId": "car-111-010",
+      "photoId": "car-111-010",
+      "status": "agreed"
+    },
+    "111-011": {
+      "vehicleId": "car-111-011",
+      "photoId": "car-111-011",
+      "status": "agreed"
+    },
+    "111-100": {
+      "vehicleId": "car-111-100",
+      "photoId": "car-111-100",
+      "status": "agreed"
+    },
+    "111-101": {
+      "vehicleId": "car-111-101",
+      "photoId": "car-111-101",
+      "status": "agreed"
+    },
+    "111-110": {
+      "vehicleId": "car-111-110",
+      "photoId": "car-111-110",
+      "status": "agreed"
+    },
+    "111-111": {
+      "vehicleId": "car-111-111",
+      "photoId": "car-111-111",
+      "status": "agreed"
+    },
+    "000-010": {
+      "vehicleId": "car-000-010",
+      "photoId": "car-000-010",
+      "status": "agreed"
+    },
+    "000-100": {
+      "vehicleId": "car-000-100",
+      "photoId": "car-000-100",
+      "status": "agreed"
+    },
+    "000-101": {
+      "vehicleId": "car-000-101",
+      "photoId": "car-000-101",
+      "status": "agreed"
+    },
+    "000-110": {
+      "vehicleId": "car-000-110",
+      "photoId": "car-000-110",
+      "status": "agreed"
+    },
+    "001-110": {
+      "vehicleId": "car-001-110",
+      "photoId": "car-001-110",
+      "status": "agreed"
+    },
+    "001-001": {
+      "vehicleId": "car-001-001",
+      "photoId": "car-001-001",
+      "status": "agreed"
+    },
+    "001-011": {
+      "vehicleId": "car-001-011",
+      "photoId": "car-001-011",
+      "status": "agreed"
+    },
+    "010-101": {
+      "vehicleId": "car-010-101",
+      "photoId": "car-010-101",
+      "status": "agreed"
+    },
+    "010-110": {
+      "vehicleId": "car-010-110",
+      "photoId": "car-010-110",
+      "status": "agreed"
+    },
+    "011-101": {
+      "vehicleId": "car-011-101",
+      "photoId": "car-011-101",
+      "status": "agreed"
+    },
+    "011-111": {
+      "vehicleId": "car-011-111",
+      "photoId": "car-011-111",
+      "status": "agreed"
+    },
+    "100-001": {
+      "vehicleId": "car-100-001",
+      "photoId": "car-100-001",
+      "status": "agreed"
+    },
+    "100-111": {
+      "vehicleId": "car-100-111",
+      "photoId": "car-100-111",
+      "status": "agreed"
+    },
+    "101-001": {
+      "vehicleId": "car-101-001",
+      "photoId": "car-101-001",
+      "status": "agreed"
+    },
+    "101-110": {
+      "vehicleId": "car-101-110",
+      "photoId": "car-101-110",
+      "status": "agreed"
+    },
+    "110-010": {
+      "vehicleId": "car-110-010",
+      "photoId": "car-110-010",
+      "status": "agreed"
+    }
+  }
+}

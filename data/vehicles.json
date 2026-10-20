@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "car-000-111": {
+      "name": "Citroën Ami (2020)",
+      "year": 2020,
+      "photoSearch": "Citroën Ami (2020)"
+    },
+    "car-100-101": {
+      "name": "Citroën DS 19 (1965)",
+      "year": 1965,
+      "photoSearch": "Citroen DS 19 1965"
+    },
+    "car-101-000": {
+      "name": "Volvo 245 (1985)",
+      "year": 1985,
+      "photoSearch": "Volvo 245 estate 1985"
+    },
+    "car-000-000": {
+      "name": "Renault Twingo I (2003)",
+      "year": 2003,
+      "photoSearch": "Renault Twingo 2003"
+    },
+    "car-000-001": {
+      "name": "Citroën 2CV (1965)",
+      "year": 1965,
+      "photoSearch": "Citroen 2CV 1965 original"
+    },
+    "car-000-011": {
+      "name": "Fiat 500 (2007)",
+      "year": 2007,
+      "photoSearch": "Fiat 500 2007 hatchback"
+    },
+    "car-001-000": {
+      "name": "Volkswagen Golf I (1980)",
+      "year": 1980,
+      "photoSearch": "Volkswagen Golf Mk1 1980 standard hatchback"
+    },
+    "car-001-010": {
+      "name": "Saab 900 Classic (1985)",
+      "year": 1985,
+      "photoSearch": "Saab 900 1985 three door hatchback original"
+    },
+    "car-001-100": {
+      "name": "Simca 1100 (1968)",
+      "year": 1968,
+      "photoSearch": "Simca 1100 (1968)"
+    },
+    "car-001-101": {
+      "name": "BMW i3 (2015)",
+      "year": 2015,
+      "photoSearch": "BMW i3 2015 hatchback"
+    },
+    "car-001-111": {
+      "name": "Honda Civic VIII Hatchback (2008)",
+      "year": 2008,
+      "photoSearch": "Honda Civic 2008 European five door hatchback FN FK UFO"
+    },
+    "car-010-000": {
+      "name": "Porsche 911 (1967)",
+      "year": 1967,
+      "photoSearch": "Porsche 911 1967 coupe original"
+    },
+    "car-010-001": {
+      "name": "Ford Mustang Fastback (1965)",
+      "year": 1965,
+      "photoSearch": "Ford Mustang Fastback 1965 stock"
+    },
+    "car-010-010": {
+      "name": "BMW M3 E46 Coupé (2003)",
+      "year": 2003,
+      "photoSearch": "BMW M3 E46 coupe 2003 stock"
+    },
+    "car-010-011": {
+      "name": "Citroën C4 Coupé (2006)",
+      "year": 2006,
+      "photoSearch": "Citroen C4 coupe 2006 three door"
+    },
+    "car-010-100": {
+      "name": "Honda NSX I (1991)",
+      "year": 1991,
+      "photoSearch": "Honda NSX 1991 red coupe stock"
+    },
+    "car-010-111": {
+      "name": "BMW i8 Coupé (2014)",
+      "year": 2014,
+      "photoSearch": "BMW i8 coupe 2014 blue stock"
+    },
+    "car-011-000": {
+      "name": "MGB Roadster (1965)",
+      "year": 1965,
+      "photoSearch": "MGB roadster 1965 chrome bumper"
+    },
+    "car-011-001": {
+      "name": "Mazda MX-5 NA (1989)",
+      "year": 1989,
+      "photoSearch": "Mazda MX5 NA 1989 stock red"
+    },
+    "car-011-010": {
+      "name": "Mercedes-Benz SL R107 (1980)",
+      "year": 1980,
+      "photoSearch": "Mercedes Benz SL R107 1980 roadster soft top down"
+    },
+    "car-011-011": {
+      "name": "Fiat 124 Spider (2016)",
+      "year": 2016,
+      "photoSearch": "Fiat 124 Spider 2016 roadster stock"
+    },
+    "car-011-100": {
+      "name": "Mercedes-Benz SLK R170 (1998)",
+      "year": 1998,
+      "photoSearch": "Mercedes SLK R170 1998 roof down"
+    },
+    "car-011-110": {
+      "name": "Honda S2000 (2000)",
+      "year": 2000,
+      "photoSearch": "Honda S2000 2000 silver stock roadster"
+    },
+    "car-100-000": {
+      "name": "Mercedes-Benz W123 (1982)",
+      "year": 1982,
+      "photoSearch": "Mercedes Benz W123 1982 sedan stock"
+    },
+    "car-100-010": {
+      "name": "Lincoln Continental Sedan (1963)",
+      "year": 1963,
+      "photoSearch": "Lincoln Continental 1963 four door sedan"
+    },
+    "car-100-011": {
+      "name": "Cadillac Sedan de Ville (1959)",
+      "year": 1959,
+      "photoSearch": "Cadillac Sedan de Ville 1959 four door hardtop"
+    },
+    "car-100-100": {
+      "name": "Audi A8 D2 (1996)",
+      "year": 1996,
+      "photoSearch": "Audi A8 D2 1996 sedan stock"
+    },
+    "car-100-110": {
+      "name": "Lexus LS 400 I (1991)",
+      "year": 1991,
+      "photoSearch": "Lexus LS400 1991 sedan stock"
+    },
+    "car-101-010": {
+      "name": "Mercedes-Benz S124 Estate (1988)",
+      "year": 1988,
+      "photoSearch": "Mercedes Benz S124 1988 estate wagon"
+    },
+    "car-101-011": {
+      "name": "Chevrolet Bel Air Nomad (1957)",
+      "year": 1957,
+      "photoSearch": "Chevrolet Bel Air Nomad 1957 station wagon stock"
+    },
+    "car-101-100": {
+      "name": "Subaru Outback I (1997)",
+      "year": 1997,
+      "photoSearch": "Subaru Outback 1997 two tone wagon stock"
+    },
+    "car-101-101": {
+      "name": "MINI Clubman F54 (2015)",
+      "year": 2015,
+      "photoSearch": "MINI Clubman F54 2015 Cooper estate"
+    },
+    "car-101-111": {
+      "name": "Audi RS6 Avant C7 (2014)",
+      "year": 2014,
+      "photoSearch": "Audi RS6 Avant C7 2014 stock wagon"
+    },
+    "car-110-000": {
+      "name": "Volkswagen T3 Caravelle (1985)",
+      "year": 1985,
+      "photoSearch": "Volkswagen T3 Caravelle 1985 passenger van stock"
+    },
+    "car-110-001": {
+      "name": "Fiat Doblò I (2005)",
+      "year": 2005,
+      "photoSearch": "Fiat Doblo 2005 passenger van first generation"
+    },
+    "car-110-011": {
+      "name": "Volkswagen T1 Samba (1965)",
+      "year": 1965,
+      "photoSearch": "Volkswagen T1 Samba 1965 passenger bus stock"
+    },
+    "car-110-100": {
+      "name": "Citroën Berlingo I Multispace (1998)",
+      "year": 1998,
+      "photoSearch": "Citroen Berlingo Multispace 1998 passenger"
+    },
+    "car-110-101": {
+      "name": "Fiat Multipla I (1999)",
+      "year": 1999,
+      "photoSearch": "Fiat Multipla 1999 original six seats"
+    },
+    "car-110-110": {
+      "name": "Toyota Previa I (1991)",
+      "year": 1991,
+      "photoSearch": "Toyota Previa 1991 passenger van stock"
+    },
+    "car-110-111": {
+      "name": "Volkswagen ID. Buzz (2022)",
+      "year": 2022,
+      "photoSearch": "Volkswagen ID Buzz 2022 passenger two tone"
+    },
+    "car-111-000": {
+      "name": "Toyota Land Cruiser J40 (1965)",
+      "year": 1965,
+      "photoSearch": "Toyota Land Cruiser FJ40 1965 stock"
+    },
+    "car-111-001": {
+      "name": "Dacia Duster II (2018)",
+      "year": 2018,
+      "photoSearch": "Dacia Duster II 2018"
+    },
+    "car-111-010": {
+      "name": "Range Rover Classic (1985)",
+      "year": 1985,
+      "photoSearch": "Range Rover Classic 1985 four door stock"
+    },
+    "car-111-011": {
+      "name": "Mercedes-Benz G-Class (2019)",
+      "year": 2019,
+      "photoSearch": "Mercedes G Class 2019 W463 stock"
+    },
+    "car-111-100": {
+      "name": "Honda CR-V I (1998)",
+      "year": 1998,
+      "photoSearch": "Honda CRV 1998 first generation stock"
+    },
+    "car-111-101": {
+      "name": "Toyota RAV4 I (1995)",
+      "year": 1995,
+      "photoSearch": "Toyota RAV4 1995 three door stock"
+    },
+    "car-111-110": {
+      "name": "Lexus RX 300 I (2001)",
+      "year": 2001,
+      "photoSearch": "Lexus RX300 2001 first generation stock"
+    },
+    "car-111-111": {
+      "name": "Tesla Model X (2016)",
+      "year": 2016,
+      "photoSearch": "Tesla Model X 2016 stock falcon doors"
+    },
+    "car-000-010": {
+      "name": "Volkswagen Beetle (1965)",
+      "year": 1965,
+      "photoSearch": "Volkswagen Beetle 1965 stock"
+    },
+    "car-000-100": {
+      "name": "Toyota iQ (2009)",
+      "year": 2009,
+      "photoSearch": "Toyota iQ (2009)"
+    },
+    "car-000-101": {
+      "name": "BMW Isetta 250 (1957)",
+      "year": 1957,
+      "photoSearch": "BMW Isetta 250 (1957)"
+    },
+    "car-000-110": {
+      "name": "Honda e (2020)",
+      "year": 2020,
+      "photoSearch": "Honda e 2020"
+    },
+    "car-001-110": {
+      "name": "Renault 16 (1968)",
+      "year": 1968,
+      "photoSearch": "Renault 16 1968 hatchback"
+    },
+    "car-001-001": {
+      "name": "MINI Cooper R50 (2005)",
+      "year": 2005,
+      "photoSearch": "MINI Cooper R50 (2005)"
+    },
+    "car-001-011": {
+      "name": "Renault 5 E-Tech (2024)",
+      "year": 2024,
+      "photoSearch": "Renault 5 E-Tech (2024)"
+    },
+    "car-010-101": {
+      "name": "Honda CR-X I (1985)",
+      "year": 1985,
+      "photoSearch": "Honda CR-X I (1985)"
+    },
+    "car-010-110": {
+      "name": "Porsche 928 (1978)",
+      "year": 1978,
+      "photoSearch": "Porsche 928 (1978)"
+    },
+    "car-011-101": {
+      "name": "Peugeot 308 CC (2012)",
+      "year": 2012,
+      "photoSearch": "Peugeot 308 CC (2012)"
+    },
+    "car-011-111": {
+      "name": "Jaguar E-Type Series I Roadster (1963)",
+      "year": 1963,
+      "photoSearch": "Jaguar E-Type Series I Roadster (1963)"
+    },
+    "car-100-001": {
+      "name": "Toyota Camry XV70 (2018)",
+      "year": 2018,
+      "photoSearch": "Toyota Camry XV70 (2018)"
+    },
+    "car-100-111": {
+      "name": "Hyundai Ioniq 6 (2023)",
+      "year": 2023,
+      "photoSearch": "Hyundai Ioniq 6 (2023)"
+    },
+    "car-101-001": {
+      "name": "Alfa Romeo 156 Sportwagon (2003)",
+      "year": 2003,
+      "photoSearch": "Alfa Romeo 156 Sportwagon (2003)"
+    },
+    "car-101-110": {
+      "name": "Volvo V90 T8 (2017)",
+      "year": 2017,
+      "photoSearch": "Volvo V90 T8 (2017)"
+    },
+    "car-110-010": {
+      "name": "Ford S-MAX II (2015)",
+      "year": 2015,
+      "photoSearch": "Ford S-MAX II 2015"
+    }
+  }
+}

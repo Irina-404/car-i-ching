@@ -1,0 +1,51 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build
+.next/
+out/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude / Cowork local settings
+.claude/settings.json
+
+# Office and text documents
+*.pptx
+*.ppt
+*.pptm
+*.docx
+*.doc
+*.docm
+*.xlsx
+*.xls
+*.xlsm
+*.odt
+*.odp
+*.ods
+*.pdf
+*.rtf
+*.txt
+
+# Data files
+*.csv
+
+# Historical documents, gallery snapshots, and original photos
+/archive/

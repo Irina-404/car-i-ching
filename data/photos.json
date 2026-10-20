@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "car-000-111": {
+      "url": "assets/images/cars/000-111.webp",
+      "full": "assets/images/cars/000-111.webp",
+      "source": "https://www.autozine.nl/citroen/ami/nieuws/citroen-introduceert-ami-2020",
+      "author": "",
+      "license": ""
+    },
+    "car-100-101": {
+      "url": "assets/images/cars/100-101.webp",
+      "full": "assets/images/cars/100-101.webp",
+      "source": "https://www.actualidadmotor.com/retroprueba-citroen-ds-19-60-anos-siendo-icono/",
+      "author": "",
+      "license": ""
+    },
+    "car-101-000": {
+      "url": "assets/images/cars/101-000.webp",
+      "full": "assets/images/cars/101-000.webp",
+      "source": "https://www.classicdigest.com/sv/cars/volvo/other/33483",
+      "author": "",
+      "license": ""
+    },
+    "car-000-000": {
+      "url": "assets/images/cars/000-000.webp",
+      "full": "assets/images/cars/000-000.webp",
+      "source": "https://www.autoweek.nl/reviews/artikel/renault-twingo-12-expression-2003/",
+      "author": "",
+      "license": ""
+    },
+    "car-000-001": {
+      "url": "assets/images/cars/000-001.webp",
+      "full": "assets/images/cars/000-001.webp",
+      "source": "https://backoffice.rmsothebys.com/auctions/af18/lots/r0335-1965-citroen-2cv/",
+      "author": "",
+      "license": ""
+    },
+    "car-000-011": {
+      "url": "assets/images/cars/000-011.webp",
+      "full": "assets/images/cars/000-011.webp",
+      "source": "https://www.auto-abc.eu/Fiat-500/g1191-2007",
+      "author": "",
+      "license": ""
+    },
+    "car-001-000": {
+      "url": "assets/images/cars/001-000.webp",
+      "full": "assets/images/cars/001-000.webp",
+      "source": "https://www.classic.com/veh/1980-volkswagen-golf-gls-17a0715507-Wxx7eBW/",
+      "author": "",
+      "license": ""
+    },
+    "car-001-010": {
+      "url": "assets/images/cars/001-010.webp",
+      "full": "assets/images/cars/001-010.webp",
+      "source": "https://www.carandclassic.com/de/auto/C1562353",
+      "author": "",
+      "license": ""
+    },
+    "car-001-100": {
+      "url": "assets/images/cars/001-100.webp",
+      "full": "assets/images/cars/001-100.webp",
+      "source": "https://www.carandclassic.com/l/C1626810",
+      "author": "",
+      "license": ""
+    },
+    "car-001-101": {
+      "url": "assets/images/cars/001-101.webp",
+      "full": "assets/images/cars/001-101.webp",
+      "source": "https://www.finn.no/mobility/item/455061848",
+      "author": "",
+      "license": ""
+    },
+    "car-001-111": {
+      "url": "assets/images/cars/001-111.webp",
+      "full": "assets/images/cars/001-111.webp",
+      "source": "https://honda-civic.infocar.ua/civic-5d_id651.html",
+      "author": "",
+      "license": ""
+    },
+    "car-010-000": {
+      "url": "assets/images/cars/010-000.webp",
+      "full": "assets/images/cars/010-000.webp",
+      "source": "https://www.stlouiscarmuseum.com/vehicles/1088/1967-porsche-911",
+      "author": "",
+      "license": ""
+    },
+    "car-010-001": {
+      "url": "assets/images/cars/010-001.webp",
+      "full": "assets/images/cars/010-001.webp",
+      "source": "https://mustangattitude.com/cgi-bin/showcar.cgi?pic=%2F1965%2F1965_00072_01",
+      "author": "",
+      "license": ""
+    },
+    "car-010-010": {
+      "url": "assets/images/cars/010-010.webp",
+      "full": "assets/images/cars/010-010.webp",
+      "source": "https://www.builtforbackroads.com/listing/2003-bmw-m3-20",
+      "author": "",
+      "license": ""
+    },
+    "car-010-011": {
+      "url": "assets/images/cars/010-011.webp",
+      "full": "assets/images/cars/010-011.webp",
+      "source": "https://www.planete-citroen.com/topic/91047-judika%C3%ABl-c4-coup%C3%A9/",
+      "author": "",
+      "license": ""
+    },
+    "car-010-100": {
+      "url": "assets/images/cars/010-100.webp",
+      "full": "assets/images/cars/010-100.webp",
+      "source": "https://www.goo-net.com/usedcar/spread/goo/15/700920020230251107001.html",
+      "author": "",
+      "license": ""
+    },
+    "car-010-111": {
+      "url": "assets/images/cars/010-111.webp",
+      "full": "assets/images/cars/010-111.webp",
+      "source": "https://www.classic.com/veh/2014-bmw-i8-coupe-wby2z2c54evx64864-4V2YJl4/",
+      "author": "",
+      "license": ""
+    },
+    "car-011-000": {
+      "url": "assets/images/cars/011-000.webp",
+      "full": "assets/images/cars/011-000.webp",
+      "source": "https://www.carandclassic.com/car/C1479342",
+      "author": "",
+      "license": ""
+    },
+    "car-011-001": {
+      "url": "assets/images/cars/011-001.webp",
+      "full": "assets/images/cars/011-001.webp",
+      "source": "https://es.motor1.com/news/175164/mazda-mx5-na-fotos/",
+      "author": "",
+      "license": ""
+    },
+    "car-011-010": {
+      "url": "assets/images/cars/011-010.webp",
+      "full": "assets/images/cars/011-010.webp",
+      "source": "https://www.topcarrating.com/1980-mercedes-benz-500-sl-r107.php",
+      "author": "",
+      "license": ""
+    },
+    "car-011-011": {
+      "url": "assets/images/cars/011-011.webp",
+      "full": "assets/images/cars/011-011.webp",
+      "source": "https://www.autocar.co.uk/car-news/new-cars/2016-fiat-124-spider-pricing-and-specification-revealed",
+      "author": "",
+      "license": ""
+    },
+    "car-011-100": {
+      "url": "assets/images/cars/011-100.webp",
+      "full": "assets/images/cars/011-100.webp",
+      "source": "https://www.film-autos.com/oldtimer-mieten/6062-mercedes-benz-slk-r170-roadster-baujahr-1998/",
+      "author": "",
+      "license": ""
+    },
+    "car-011-110": {
+      "url": "assets/images/cars/011-110.webp",
+      "full": "assets/images/cars/011-110.webp",
+      "source": "https://www.cars.com/research/honda-s2000-2000/",
+      "author": "",
+      "license": ""
+    },
+    "car-100-000": {
+      "url": "assets/images/cars/100-000.webp",
+      "full": "assets/images/cars/100-000.webp",
+      "source": "https://otoklasyki.pl/726/mercedes-w123-280e-bialy-1982",
+      "author": "",
+      "license": ""
+    },
+    "car-100-010": {
+      "url": "assets/images/cars/100-010.webp",
+      "full": "assets/images/cars/100-010.webp",
+      "source": "https://journal.classiccars.com/2025/07/13/autohunter-spotlight-1963-lincoln-continental-four-door-sedan/",
+      "author": "",
+      "license": ""
+    },
+    "car-100-011": {
+      "url": "assets/images/cars/100-011.webp",
+      "full": "assets/images/cars/100-011.webp",
+      "source": "https://www.hagerty.com/media/opinion/klockau-classics/jim-jordans-59-cadillac-sedan-de-ville-is-the-last-one-for-now/",
+      "author": "",
+      "license": ""
+    },
+    "car-100-100": {
+      "url": "assets/images/cars/100-100.webp",
+      "full": "assets/images/cars/100-100.webp",
+      "source": "https://www.ricardo.ch/de/a/audi-a8-42-d2-erst-hand-sammler-zustandso-einmalig-1293980522/",
+      "author": "",
+      "license": ""
+    },
+    "car-100-110": {
+      "url": "assets/images/cars/100-110.webp",
+      "full": "assets/images/cars/100-110.webp",
+      "source": "https://classics.autotrader.com/classic-cars-for-sale/1991-lexus-ls_400-for-sale",
+      "author": "",
+      "license": ""
+    },
+    "car-101-010": {
+      "url": "assets/images/cars/101-010.webp",
+      "full": "assets/images/cars/101-010.webp",
+      "source": "https://www.mercedesman.ru/en/E-Class",
+      "author": "",
+      "license": ""
+    },
+    "car-101-011": {
+      "url": "assets/images/cars/101-011.webp",
+      "full": "assets/images/cars/101-011.webp",
+      "source": "https://www.autoevolution.com/news/1957-chevrolet-nomad-is-a-corona-yellow-time-capsule-it-can-be-yours-194244.html",
+      "author": "",
+      "license": ""
+    },
+    "car-101-100": {
+      "url": "assets/images/cars/101-100.webp",
+      "full": "assets/images/cars/101-100.webp",
+      "source": "https://www.carexpert.com.au/car-news/subaru-outbacks-australian-future-secure-but-where-will-it-be-built",
+      "author": "",
+      "license": ""
+    },
+    "car-101-101": {
+      "url": "assets/images/cars/101-101.webp",
+      "full": "assets/images/cars/101-101.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:BMW_MINI_COOPER_CLUBMAN_(F54)_front.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0"
+    },
+    "car-101-111": {
+      "url": "assets/images/cars/101-111.webp",
+      "full": "assets/images/cars/101-111.webp",
+      "source": "https://collectingcars.com/for-sale/2014-audi-c7-rs6-avant-3",
+      "author": "",
+      "license": ""
+    },
+    "car-110-000": {
+      "url": "assets/images/cars/110-000.webp",
+      "full": "assets/images/cars/110-000.webp",
+      "source": "https://www.njuskalo.hr/auti/vw-transporter-td-putnicki-kombi-oglas-23342691",
+      "author": "",
+      "license": ""
+    },
+    "car-110-001": {
+      "url": "assets/images/cars/110-001.webp",
+      "full": "assets/images/cars/110-001.webp",
+      "source": "https://www.carkeys.co.uk/car-reviews/2005-fiat-doblo",
+      "author": "",
+      "license": ""
+    },
+    "car-110-011": {
+      "url": "assets/images/cars/110-011.webp",
+      "full": "assets/images/cars/110-011.webp",
+      "source": "https://www.erclassics.com/volkswagen-t1-samba-1965-v3440/",
+      "author": "",
+      "license": ""
+    },
+    "car-110-100": {
+      "url": "assets/images/cars/110-100.webp",
+      "full": "assets/images/cars/110-100.webp",
+      "source": "https://www.autowereld.nl/citroen/berlingo/1-4i-multispace-41112966/details.html",
+      "author": "",
+      "license": ""
+    },
+    "car-110-101": {
+      "url": "assets/images/cars/110-101.webp",
+      "full": "assets/images/cars/110-101.webp",
+      "source": "https://www.carswp.com/fiat-multipla-1999-2001-photos-283361.htm",
+      "author": "",
+      "license": ""
+    },
+    "car-110-110": {
+      "url": "assets/images/cars/110-110.webp",
+      "full": "assets/images/cars/110-110.webp",
+      "source": "https://classiccardb.com/toyota/421613-1991-toyota-previa-low-128k-mi-california-clean-carfax-rare-classic.html",
+      "author": "",
+      "license": ""
+    },
+    "car-110-111": {
+      "url": "assets/images/cars/110-111.webp",
+      "full": "assets/images/cars/110-111.webp",
+      "source": "https://www.km77.com/coches/volkswagen/id-buzz/2022/estandar/informacion",
+      "author": "",
+      "license": ""
+    },
+    "car-111-000": {
+      "url": "assets/images/cars/111-000.webp",
+      "full": "assets/images/cars/111-000.webp",
+      "source": "https://www.pcarmarket.com/auction/1965-toyota-land-cruiser-fj40",
+      "author": "",
+      "license": ""
+    },
+    "car-111-001": {
+      "url": "assets/images/cars/111-001.webp",
+      "full": "assets/images/cars/111-001.webp",
+      "source": "https://www.autocarindia.com/auto-images/new-2018-renault-duster-image-gallery-405816",
+      "author": "",
+      "license": ""
+    },
+    "car-111-010": {
+      "url": "assets/images/cars/111-010.webp",
+      "full": "assets/images/cars/111-010.webp",
+      "source": "https://www.classic.com/veh/1985-range-rover-classic-35-v8-sallhamv8ba151209-p0PYOyp/",
+      "author": "",
+      "license": ""
+    },
+    "car-111-011": {
+      "url": "assets/images/cars/111-011.webp",
+      "full": "assets/images/cars/111-011.webp",
+      "source": "https://toprankglobal.jp/stockdetail/56071/2019%20Mercedes-Benz%20G%20CLASS",
+      "author": "",
+      "license": ""
+    },
+    "car-111-100": {
+      "url": "assets/images/cars/111-100.webp",
+      "full": "assets/images/cars/111-100.webp",
+      "source": "https://www.carjunction.com/car-detail/honda-crv-1998-29083.html",
+      "author": "",
+      "license": ""
+    },
+    "car-111-101": {
+      "url": "assets/images/cars/111-101.webp",
+      "full": "assets/images/cars/111-101.webp",
+      "source": "https://atl-jdm.com/inventory-jdm-cars-for-sale/1995-toyota-rav4-2door-blue",
+      "author": "",
+      "license": ""
+    },
+    "car-111-110": {
+      "url": "assets/images/cars/111-110.webp",
+      "full": "assets/images/cars/111-110.webp",
+      "source": "https://www.cars.com/research/lexus-rx_300-2001/",
+      "author": "",
+      "license": ""
+    },
+    "car-111-111": {
+      "url": "assets/images/cars/111-111.webp",
+      "full": "assets/images/cars/111-111.webp",
+      "source": "https://www.km77.com/coches/tesla/model-x/2016/imagenes/listado-completo",
+      "author": "",
+      "license": ""
+    },
+    "car-000-010": {
+      "url": "assets/images/cars/000-010.webp",
+      "full": "assets/images/cars/000-010.webp",
+      "source": "https://auctions.wbandsons.com/auction/lot/lot-49---1965-volkswagen-beetle/?lot=3097&sd=1",
+      "author": "",
+      "license": ""
+    },
+    "car-000-100": {
+      "url": "assets/images/cars/000-100.webp",
+      "full": "assets/images/cars/000-100.webp",
+      "source": "https://www.exchangeandmart.co.uk/reviews/toyota/iq/2009/209357",
+      "author": "",
+      "license": ""
+    },
+    "car-000-101": {
+      "url": "assets/images/cars/000-101.webp",
+      "full": "assets/images/cars/000-101.webp",
+      "source": "https://www.classic-trader.com/au/cars/listing/bmw/isetta/isetta-250/1957/425811",
+      "author": "",
+      "license": ""
+    },
+    "car-000-110": {
+      "url": "assets/images/cars/000-110.webp",
+      "full": "assets/images/cars/000-110.webp",
+      "source": "https://www.carscoops.com/2020/01/2020-honda-e-stars-in-fresh-photo-gallery-and-videos-reveals-full-specs/",
+      "author": "",
+      "license": ""
+    },
+    "car-001-110": {
+      "url": "assets/images/cars/001-110.webp",
+      "full": "assets/images/cars/001-110.webp",
+      "source": "https://www.carandclassic.com/car/C1655348",
+      "author": "",
+      "license": ""
+    },
+    "car-001-001": {
+      "url": "assets/images/cars/001-001.webp",
+      "full": "assets/images/cars/001-001.webp",
+      "source": "https://www.carandclassic.com/l/C1737538",
+      "author": "",
+      "license": ""
+    },
+    "car-001-011": {
+      "url": "assets/images/cars/001-011.webp",
+      "full": "assets/images/cars/001-011.webp",
+      "source": "https://autorai.nl/autozoeker/renault/5-e-tech/4450/",
+      "author": "",
+      "license": ""
+    },
+    "car-010-101": {
+      "url": "assets/images/cars/010-101.webp",
+      "full": "assets/images/cars/010-101.webp",
+      "source": "https://collectingcars.com/for-sale/1985-honda-crx-1",
+      "author": "",
+      "license": ""
+    },
+    "car-010-110": {
+      "url": "assets/images/cars/010-110.webp",
+      "full": "assets/images/cars/010-110.webp",
+      "source": "https://www.classic-trader.com/fr/voitures/annonce/porsche/928/928/1978/395286",
+      "author": "",
+      "license": ""
+    },
+    "car-011-101": {
+      "url": "assets/images/cars/011-101.webp",
+      "full": "assets/images/cars/011-101.webp",
+      "source": "https://www.carandclassic.com/fr/voiture/C1582079",
+      "author": "",
+      "license": ""
+    },
+    "car-011-111": {
+      "url": "assets/images/cars/011-111.webp",
+      "full": "assets/images/cars/011-111.webp",
+      "source": "https://www.classic-trader.com/de/automobile/inserat/jaguar/e-type/e-type-3-8/1963/399767",
+      "author": "",
+      "license": ""
+    },
+    "car-100-001": {
+      "url": "assets/images/cars/100-001.webp",
+      "full": "assets/images/cars/100-001.webp",
+      "source": "https://www.cars.com/research/toyota-camry-2018/",
+      "author": "",
+      "license": ""
+    },
+    "car-100-111": {
+      "url": "assets/images/cars/100-111.webp",
+      "full": "assets/images/cars/100-111.webp",
+      "source": "https://www.caranddriver.com/hyundai/ioniq-6-2023",
+      "author": "",
+      "license": ""
+    },
+    "car-101-001": {
+      "url": "assets/images/cars/101-001.webp",
+      "full": "assets/images/cars/101-001.webp",
+      "source": "https://www.carandclassic.com/l/C1838579",
+      "author": "",
+      "license": ""
+    },
+    "car-101-110": {
+      "url": "assets/images/cars/101-110.webp",
+      "full": "assets/images/cars/101-110.webp",
+      "source": "https://www.carmagazine.co.uk/car-reviews/volvo/volvo-v90-t8-twin-engine-2017-review/",
+      "author": "",
+      "license": ""
+    },
+    "car-110-010": {
+      "url": "assets/images/cars/110-010.webp",
+      "full": "assets/images/cars/110-010.webp",
+      "source": "https://www.completecar.ie/car-reviews/article/Ford/S-Max/S-Max/127/4632/2015-Ford-S-Max-review.html",
+      "author": "",
+      "license": ""
+    }
+  }
+}

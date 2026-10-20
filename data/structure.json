@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "dimensions": {
+    "rows": 8,
+    "columns": 8
+  },
+  "bitOrder": [
+    1,
+    2,
+    3
+  ],
+  "rowCodes": [
+    "000",
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110",
+    "111"
+  ],
+  "columnCodes": [
+    "000",
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110",
+    "111"
+  ],
+  "cellCodeFormat": "RRR-CCC",
+  "axes": {
+    "row": [
+      {
+        "position": 1,
+        "id": "taskScale",
+        "values": [
+          "personal",
+          "wide"
+        ]
+      },
+      {
+        "position": 2,
+        "id": "temperament",
+        "values": [
+          "calm",
+          "active"
+        ]
+      },
+      {
+        "position": 3,
+        "id": "environment",
+        "values": [
+          "predictable",
+          "adventure"
+        ]
+      }
+    ],
+    "column": [
+      {
+        "position": 1,
+        "id": "approach",
+        "values": [
+          "tradition",
+          "innovation"
+        ]
+      },
+      {
+        "position": 2,
+        "id": "priority",
+        "values": [
+          "practicality",
+          "pleasure"
+        ]
+      },
+      {
+        "position": 3,
+        "id": "expression",
+        "values": [
+          "restraint",
+          "selfExpression"
+        ]
+      }
+    ]
+  }
+}
