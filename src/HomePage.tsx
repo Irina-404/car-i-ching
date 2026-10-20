@@ -1,5 +1,6 @@
 import type { RefObject } from 'react';
 import hero from '../assets/images/home/hero.webp';
+import './typography.css';
 import './home.css';
 
 export default function HomePage({ heading, onStart }: {
@@ -17,7 +18,7 @@ export default function HomePage({ heading, onStart }: {
       <img className="home-hero-image" src={hero} width="1672" height="941" fetchPriority="high"
         alt="Шесть линий Книги перемен переходят в сияющий янтарный автомобиль на горной дороге" />
       <div className="home-bottom">
-        <h1 ref={heading} tabIndex={-1}>Какой автомобиль похож на тебя?</h1>
+        <h1 className="type-heading-1" ref={heading} tabIndex={-1}>Какой автомобиль похож на тебя?</h1>
         <div className="home-actions">
           <button className="home-cta" onClick={onStart}>Начать игру <span aria-hidden="true">→</span></button>
         </div>
@@ -25,14 +26,14 @@ export default function HomePage({ heading, onStart }: {
     </div>
     <div className="home-below">
       <section className="home-section">
-        <h2>Об идее</h2>
+        <h2 className="type-heading-2">Об идее</h2>
         <div className="home-section-copy">
           <p>У каждого человека свои привычки и отношение к жизни. У автомобилей тоже есть характер — по крайней мере, нам нравится так думать.</p>
           <p>Мы соединили древнюю китайскую Книгу перемен с миром автомобилей и превратили эту встречу в небольшую игру. Здесь нет правильных и неправильных ответов — есть только твои предпочтения и немного автомобильной магии.</p>
         </div>
       </section>
       <section className="home-section">
-        <h2>Как это работает</h2>
+        <h2 className="type-heading-2">Как это работает</h2>
         <div className="home-section-copy">
           <p>В основе игры — 64 гексаграммы древней китайской Книги перемен. Каждая гексаграмма — это шестизначный двоичный код, составленный из сплошных и прерывистых линий.</p>
           <p>Чтобы построить твой код, мы предложим тебе ответить на несколько вопросов о себе.</p>
@@ -40,7 +41,7 @@ export default function HomePage({ heading, onStart }: {
         </div>
       </section>
       <section className="home-section">
-        <h2>И ещё кое-что…</h2>
+        <h2 className="type-heading-2">И ещё кое-что…</h2>
         <div className="home-section-copy">
           <p>Это игра, а не психологический тест и уж тем более не руководство по выбору автомобиля.</p>
           <p>Мы собрали коллекцию автомобилей, каждый из которых в своё время стал событием. Поэтому не обижайся, если тебе достанется машина из 50-х годов. Хорошее вино с возрастом только дорожает — почему бы автомобилям не последовать его примеру?</p>

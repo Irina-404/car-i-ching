@@ -1,0 +1,59 @@
+/* Scoped to the core-question screen; mobile reference: interview_mobile_360_final.html. */
+.interview-page {
+  --interview-max-width: 600px;
+  --interview-inset: 16px;
+  --interview-copy-height: 240px;
+  --interview-prompt-height: 2.48em;
+  --interview-choice-height: 160px;
+  --interview-button-height: 52px;
+  --interview-muted: #9aa5ab;
+  --interview-hint-strong: #b0bac1;
+  --interview-choice-border: #56636e;
+  --interview-choice-hover: #414d58;
+  --interview-track: #46505a;
+  --interview-button: #c8d0d4;
+  --interview-disabled: #555e66;
+  --interview-disabled-text: #aeb8bf;
+  --interview-footer-line: #39434d;
+  --interview-footer-text: #89949c;
+  width: 100%; max-width: var(--interview-max-width); min-height: 100dvh; margin: auto;
+  padding: 0 var(--interview-inset); display: flex; flex-direction: column;
+  font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  color: var(--color-contrast); background: var(--color-base); line-height: normal;
+}
+.interview-top { padding: 19px 0 12px; }
+.interview-top span { font-size: 13px; color: var(--interview-muted); font-weight: 400; letter-spacing: .005em; }
+.interview-progress { margin: 16px 0 27px; }
+.interview-progress-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 19px; margin-bottom: 10px; color: var(--color-accent); font-weight: 700; font-size: 12px; letter-spacing: .035em; }
+.interview-count { font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.interview-track { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 2px; height: 4px; border-radius: 10px; overflow: hidden; }
+.interview-track span { background: var(--interview-track); }
+.interview-track .is-active { background: var(--color-accent); }
+.interview-copy { display: grid; grid-template-rows: minmax(min-content, 1fr) auto; gap: 15px; padding-bottom: 22px; min-height: var(--interview-copy-height); }
+.interview-situation { font-size: 16px; line-height: 1.48; margin: 0; }
+.interview-page h1 { grid-row: 2; min-height: var(--interview-prompt-height); font-size: 21px; line-height: 1.24; margin: 0; font-weight: 750; text-wrap: initial; }
+.interview-copy.is-forced { display: block; }
+.interview-page .interview-final-question { min-height: 0; font-size: 16px; line-height: 1.48; font-weight: 400; }
+.interview-choices { display: grid; grid-auto-rows: minmax(var(--interview-choice-height), auto); align-content: start; gap: 10px; min-height: calc(3 * var(--interview-choice-height) + 20px); }
+.interview-choice { width: 100%; display: flex; align-items: center; gap: 14px; text-align: left; border: 1px solid var(--interview-choice-border); border-radius: 9px; background: var(--color-surface); color: var(--color-contrast); padding: 15px 13px; min-height: var(--interview-choice-height); font: inherit; line-height: 1.4; font-size: 15px; transition: background .15s, color .15s, border-color .15s; }
+.interview-choice:hover { background: var(--interview-choice-hover); }
+.interview-choice.is-selected, .interview-choice.is-selected:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-on-accent); }
+.interview-choice:focus-visible, .interview-nav button:focus-visible { outline: 3px solid var(--color-contrast); outline-offset: 3px; }
+.interview-letter { flex: 0 0 29px; font-size: 30px; line-height: 1; font-weight: 750; color: var(--color-accent); text-align: center; }
+.interview-choice.is-selected .interview-letter { color: var(--color-on-accent); }
+.interview-answer { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.interview-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 23px 0 12px; }
+.interview-nav button { border: 1px solid var(--interview-button); background: var(--interview-button); color: var(--color-on-accent); font: 700 16px system-ui; border-radius: 9px; min-height: var(--interview-button-height); }
+.interview-nav button:disabled { background: var(--interview-disabled); border-color: var(--interview-disabled); color: var(--interview-disabled-text); cursor: not-allowed; }
+.interview-hint { font-size: 12px; line-height: 1.5; color: var(--interview-muted); margin: 0 0 22px; }
+.interview-hint p { margin: 0 0 18px; }
+.interview-hint p:last-child { margin-bottom: 0; }
+.interview-hint strong { font-weight: 600; color: var(--interview-hint-strong); }
+.interview-footer { border-top: 1px solid var(--interview-footer-line); margin-top: auto; padding: 14px 0 19px; text-align: center; color: var(--interview-footer-text); font-size: 11px; }
+/* Shared reserves measured against all 12 approved core questions.
+   min-height allows larger user text to remain readable without clipping. */
+@media (min-width: 360px) { .interview-page { --interview-copy-height: 216px; --interview-choice-height: 116px; } }
+@media (min-width: 600px) { .interview-page { --interview-copy-height: 168px; --interview-choice-height: 96px; } }
+@media (min-width: 768px) { .interview-page { padding-inline: 24px; } }
+@media (prefers-reduced-motion: reduce) { .interview-choice { transition: none; } }

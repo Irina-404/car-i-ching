@@ -6,8 +6,6 @@
   --home-hero-gap: 15px;
   --home-hero-bottom: 15px;
   --home-mobile-inset: 16px;
-  --home-title-size: clamp(29px, 3.1vw, 43px);
-  --home-section-title-size: 23px;
   --home-body-size: 16px;
   --home-body-leading: 1.72;
   --home-paragraph-gap: 14px;
@@ -36,29 +34,29 @@
 .home-logo { display: block; width: var(--home-logo-size); height: var(--home-logo-size); flex: none; background: var(--color-accent); mask: url('../assets/images/home/logo.svg?no-inline') center / contain no-repeat; }
 .home-brand-name { color: var(--color-accent); font-size: clamp(13px, 1.65vw, 23px); font-weight: 650; white-space: nowrap; letter-spacing: .005em; }
 .home-bottom { position: absolute; left: var(--home-inset); right: 4%; bottom: var(--home-hero-bottom); }
-.home-page h1 { margin: 0; font-size: var(--home-title-size); line-height: 1.12; letter-spacing: -.035em; font-weight: 700; white-space: nowrap; text-wrap: initial; text-shadow: 0 2px 18px #000b; }
+.home-page h1 { margin: 0; white-space: nowrap; text-wrap: initial; text-shadow: 0 2px 18px #000b; }
 .home-actions { display: flex; margin-top: var(--home-hero-gap); }
 .home-cta { align-self: flex-start; background: var(--color-accent); border: 0; border-radius: 9px; color: var(--color-on-accent); padding: var(--home-cta-padding); font-family: inherit; font-size: 15px; line-height: 1.3; font-weight: 700; }
 .home-cta:hover { background: var(--color-accent-hover); }
 .home-below { max-width: var(--home-max-width); margin: 0 auto; padding: 54px var(--home-inset) 64px; }
 .home-section { display: block; border-top: 1px solid var(--home-line); padding: var(--home-section-padding); max-width: 940px; }
-.home-section h2 { font-size: var(--home-section-title-size); margin: 0 0 16px; font-weight: 700; color: var(--color-contrast); }
+.home-section h2 { margin: 0 0 16px; color: var(--color-contrast); }
 .home-section-copy { max-width: 810px; }
 .home-section-copy p { font-size: var(--home-body-size); line-height: var(--home-body-leading); margin: 0 0 var(--home-paragraph-gap); color: var(--home-muted); }
 .home-section-copy p:last-child { margin-bottom: 0; }
 .home-footer { background: var(--home-footer-bg); border-top: 2px solid var(--color-accent); text-align: center; padding: 23px 16px 26px; color: var(--home-footer-text); font-size: 12px; letter-spacing: .015em; }
 @media (max-width: 1100px) {
-  .home-page { --home-title-size: clamp(25px, 3.1vw, 34px); --home-cta-padding: 10px 20px; }
+  .home-page { --home-cta-padding: 10px 20px; }
 }
 @media (max-width: 767px) {
   .home-page { --home-body-leading: 1.5; --home-paragraph-gap: 20px; }
-  .home-page { --home-title-size: clamp(27px, 7.4vw, 36px); --home-hero-gap: 18px; --home-section-title-size: 20px; --home-logo-size: 34px; --home-cta-padding: 13px 22px; --home-section-padding: 20px 0; }
+  .home-page { --home-hero-gap: 18px; --home-logo-size: 34px; --home-cta-padding: 13px 22px; --home-section-padding: 20px 0; }
   .home-hero { display: flex; flex-direction: column; }
   .home-top { position: static; padding: 16px var(--home-mobile-inset) 14px; }
   .home-brand { gap: 9px; }
   .home-brand-name { font-size: clamp(15px, 3.9vw, 18px); white-space: normal; line-height: 1.2; }
   .home-bottom { position: static; padding: 19px var(--home-mobile-inset) 25px; }
-  .home-page h1 { line-height: 1.12; white-space: normal; text-shadow: none; }
+  .home-page h1 { white-space: normal; text-shadow: none; }
   .home-cta { width: 100%; min-height: 48px; font-size: 16px; }
   .home-below { padding: 18px var(--home-mobile-inset) 50px; }
   .home-section h2 { margin-bottom: 12px; }
