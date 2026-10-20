@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Автомобильная книга перемен — колесо восьми триграмм</title>
+  <desc id="desc">Восемь разных триграмм образуют колесо между двумя концентрическими окружностями. Все штрихи одинаковой толщины.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round">
+    <circle cx="128" cy="128" r="115"/>
+    <circle cx="128" cy="128" r="51"/>
+    <!-- Eight unique three-line binary patterns, clockwise from top. -->
+    <g transform="rotate(0 128 128)"><path d="M106.5 33 H149.5 M106.5 44 H149.5 M106.5 55 H149.5"/></g>
+    <g transform="rotate(45 128 128)"><path d="M106.5 33 H149.5 M106.5 44 H149.5 M106.5 55 H124 M132 55 H149.5"/></g>
+    <g transform="rotate(90 128 128)"><path d="M106.5 33 H149.5 M106.5 44 H124 M132 44 H149.5 M106.5 55 H149.5"/></g>
+    <g transform="rotate(135 128 128)"><path d="M106.5 33 H149.5 M106.5 44 H124 M132 44 H149.5 M106.5 55 H124 M132 55 H149.5"/></g>
+    <g transform="rotate(180 128 128)"><path d="M106.5 33 H124 M132 33 H149.5 M106.5 44 H149.5 M106.5 55 H149.5"/></g>
+    <g transform="rotate(225 128 128)"><path d="M106.5 33 H124 M132 33 H149.5 M106.5 44 H149.5 M106.5 55 H124 M132 55 H149.5"/></g>
+    <g transform="rotate(270 128 128)"><path d="M106.5 33 H124 M132 33 H149.5 M106.5 44 H124 M132 44 H149.5 M106.5 55 H149.5"/></g>
+    <g transform="rotate(315 128 128)"><path d="M106.5 33 H124 M132 33 H149.5 M106.5 44 H124 M132 44 H149.5 M106.5 55 H124 M132 55 H149.5"/></g>
+  </g>
+</svg>

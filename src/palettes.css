@@ -1,0 +1,40 @@
+/* Base colors: UI_SPEC.md §4.2. Components use the named roles below. */
+:root,
+[data-palette='rice'] {
+  color-scheme: light;
+  --color-base: #F2EBDD;
+  --color-surface: #D7C6A5;
+  --color-accent: #B64636;
+  --color-contrast: #252724;
+  --color-detail: #A9A18F;
+}
+
+[data-palette='jade'] {
+  color-scheme: dark;
+  --color-base: #102E2A;
+  --color-surface: #28574C;
+  --color-accent: #B89A60;
+  --color-contrast: #E9E1D0;
+  --color-detail: #171D1C;
+}
+
+[data-palette='graphite'] {
+  color-scheme: dark;
+  --color-base: #15191E;
+  --color-surface: #303943;
+  --color-accent: #E8A63A;
+  --color-contrast: #F2EEE5;
+  --color-detail: #71818A;
+}
+
+:root {
+  --color-text-secondary: color-mix(in srgb, var(--color-contrast) 80%, var(--color-base));
+  --color-border: color-mix(in srgb, var(--color-contrast) 25%, var(--color-base));
+  --color-accent-soft: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+  --color-accent-hover: color-mix(in srgb, var(--color-accent) 88%, var(--color-contrast));
+  --color-on-accent: var(--color-base);
+  --color-disabled-bg: color-mix(in srgb, var(--color-contrast) 12%, var(--color-base));
+  --color-disabled-text: color-mix(in srgb, var(--color-contrast) 55%, var(--color-base));
+  --color-overlay: color-mix(in srgb, var(--color-detail) 80%, transparent);
+  --color-shadow: color-mix(in srgb, var(--color-detail) 20%, transparent);
+}
