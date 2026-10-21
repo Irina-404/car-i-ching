@@ -3,7 +3,8 @@
 .interview-page {
   --interview-max-width: 600px;
   --interview-inset: 16px;
-  --interview-copy-height: 240px;
+  --interview-situation-height: calc(5 * var(--type-body-size) * var(--type-body-leading));
+  --interview-copy-height: calc(var(--interview-situation-height) + 52.08px + 16px);
   --interview-prompt-height: 2.48em;
   --interview-choice-height: 160px;
   --interview-button-height: 52px;
@@ -19,7 +20,7 @@
 }
 
 .interview-top {
-  padding: 19px 0 12px;
+  padding: 12px 0 0;
 }
 
 .interview-top span {
@@ -27,7 +28,7 @@
 }
 
 .interview-progress {
-  margin: 16px 0 27px;
+  margin: 8px 0;
 }
 
 .interview-progress-head {
@@ -36,7 +37,7 @@
   align-items: center;
   gap: 8px;
   min-height: 19px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--color-accent);
 }
 
@@ -63,9 +64,9 @@
 
 .interview-copy {
   display: grid;
-  grid-template-rows: minmax(min-content, 1fr) auto;
-  gap: 15px;
-  padding-bottom: 22px;
+  grid-template-rows: minmax(var(--interview-situation-height), max-content) auto;
+  gap: 8px;
+  padding-bottom: 8px;
   min-height: var(--interview-copy-height);
 }
 
@@ -147,7 +148,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin: 23px 0 12px;
+  margin: 8px 0;
 }
 
 .interview-nav button {
@@ -190,12 +191,11 @@
   color: var(--interview-footer-text);
 }
 
-/* Shared reserves measured against all 12 approved core questions.
-   min-height allows larger user text to remain readable without clipping. */
+/* Five situation lines and two prompt lines; no flexible empty spacer.
+   Card/button sizes stay unchanged when compacting the gaps. */
 
 @media (min-width: 360px) {
   .interview-page {
-    --interview-copy-height: 216px;
     --interview-choice-height: 116px;
   }
 }
@@ -204,6 +204,10 @@
   .interview-page {
     --interview-copy-height: 168px;
     --interview-choice-height: 96px;
+  }
+
+  .interview-copy {
+    grid-template-rows: minmax(min-content, 1fr) auto;
   }
 }
 
