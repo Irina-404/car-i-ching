@@ -8,9 +8,9 @@
   padding: 0;
   border: 0;
   border-radius: 13px;
-  background: var(--hex-modal-amber);
+  background: var(--hex-modal-accent);
   color: var(--hex-modal-ink);
-  color-scheme: light;
+  color-scheme: normal;
   overflow: hidden;
 }
 

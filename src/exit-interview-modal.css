@@ -8,7 +8,7 @@
   border-radius: 12px;
   background: var(--exit-paper);
   color: var(--exit-ink);
-  color-scheme: light;
+  color-scheme: var(--color-card-scheme);
   box-shadow: 0 18px 50px var(--shadow-exit);
   overflow-y: auto;
   overscroll-behavior: contain;

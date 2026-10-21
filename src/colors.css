@@ -1,57 +1,50 @@
 :root {
-  --color-neutral-button: #C8D0D4;
-  --result-paper: var(--palette-graphite-contrast);
-  --result-ink: var(--palette-graphite-base);
-  --result-body: var(--palette-graphite-surface);
-  --result-muted: var(--palette-graphite-detail);
-  --result-amber: var(--palette-graphite-accent);
-  --shadow-hero-text: rgb(0 0 0 / 0.7333333333);
-  --shadow-exit: rgb(0 0 0 / .22);
-  --overlay-exit: rgb(12 16 20 / .73);
-  --overlay-hex: rgb(21 25 30 / .62);
-  --hex-note-rule: rgb(21 25 30 / .55);
-  --hex-trait-rule: rgb(21 25 30 / .23);
-  --hex-group-rule: rgb(21 25 30 / .5);
+  --color-neutral-button: color-mix(in srgb, var(--color-contrast) 78%, var(--color-detail));
+  --result-paper: var(--color-contrast);
+  --result-ink: var(--color-base);
+  --result-body: var(--color-surface);
+  --result-muted: var(--color-detail);
+  --result-accent: var(--color-accent);
+  --shadow-hero-text: color-mix(in srgb, var(--color-dark) 73.33333333%, transparent);
+  --shadow-exit: color-mix(in srgb, var(--color-dark) 22%, transparent);
+  --overlay-exit: color-mix(in srgb, var(--color-dark) 73%, transparent);
+  --overlay-hex: color-mix(in srgb, var(--color-dark) 62%, transparent);
+  --hex-note-rule: color-mix(in srgb, var(--color-on-accent) 55%, transparent);
+  --hex-trait-rule: color-mix(in srgb, var(--color-on-accent) 23%, transparent);
+  --hex-group-rule: color-mix(in srgb, var(--color-on-accent) 50%, transparent);
 }
 
-/* Named screen colors and fixed palette-2 roles; UI_SPEC §4. */
+/* Named screen colors and roles derived from the current theme; UI_SPEC §4. */
 
 .home-page {
   --home-muted: color-mix(in srgb, var(--color-contrast) 69%, var(--color-base));
   --home-line: color-mix(in srgb, var(--color-contrast) 18%, var(--color-base));
-  --home-footer-bg: color-mix(in srgb, var(--color-base) 80%, var(--color-black));
+  --home-footer-bg: color-mix(in srgb, var(--color-base) 80%, var(--color-dark));
   --home-footer-text: color-mix(in srgb, var(--color-accent) 88%, var(--color-detail));
 }
 
-[data-palette='graphite'] .home-page {
-  --home-muted: #aeb8c0;
-  --home-line: #3d464e;
-  --home-footer-bg: #11151a;
-  --home-footer-text: #d6a14c;
-}
-
 .interview-page {
-  --interview-muted: #9aa5ab;
-  --interview-hint-strong: #b0bac1;
-  --interview-choice-border: #56636e;
-  --interview-choice-hover: #414d58;
-  --interview-track: #46505a;
+  --interview-muted: color-mix(in srgb, var(--color-contrast) 65%, var(--color-base));
+  --interview-hint-strong: color-mix(in srgb, var(--color-contrast) 76%, var(--color-base));
+  --interview-choice-border: color-mix(in srgb, var(--color-contrast) 25%, var(--color-surface));
+  --interview-choice-hover: color-mix(in srgb, var(--color-contrast) 10%, var(--color-surface));
+  --interview-track: color-mix(in srgb, var(--color-contrast) 13%, var(--color-surface));
   --interview-button: var(--color-neutral-button);
-  --interview-disabled: #555e66;
-  --interview-disabled-text: #aeb8bf;
-  --interview-footer-line: #39434d;
-  --interview-footer-text: #89949c;
+  --interview-disabled: color-mix(in srgb, var(--color-contrast) 20%, var(--color-surface));
+  --interview-disabled-text: color-mix(in srgb, var(--color-contrast) 70%, var(--color-base));
+  --interview-footer-line: color-mix(in srgb, var(--color-contrast) 6%, var(--color-surface));
+  --interview-footer-text: color-mix(in srgb, var(--color-contrast) 55%, var(--color-base));
 }
 
 .hex-dialog {
-  --hex-modal-amber: var(--palette-graphite-accent);
-  --hex-modal-ink: var(--palette-graphite-base);
-  --hex-modal-body: var(--palette-graphite-surface);
+  --hex-modal-accent: var(--color-accent);
+  --hex-modal-ink: var(--color-on-accent);
+  --hex-modal-body: var(--color-on-accent);
 }
 
 .exit-dialog {
-  --exit-paper: var(--palette-graphite-contrast);
-  --exit-ink: var(--palette-graphite-base);
-  --exit-body: var(--palette-graphite-surface);
+  --exit-paper: var(--color-contrast);
+  --exit-ink: var(--color-base);
+  --exit-body: var(--color-surface);
   --exit-stay: var(--color-neutral-button);
 }

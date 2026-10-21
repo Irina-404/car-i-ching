@@ -66,6 +66,7 @@
   white-space: nowrap;
   text-wrap: initial;
   text-shadow: 0 2px 18px var(--shadow-hero-text);
+  color: var(--color-hero-text);
 }
 
 .home-actions {
@@ -166,6 +167,7 @@
   .home-page h1 {
     white-space: normal;
     text-shadow: none;
+    color: var(--color-contrast);
   }
 
   .home-cta {

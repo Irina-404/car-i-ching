@@ -6,7 +6,11 @@
   line-height: var(--type-base-leading);
   letter-spacing: var(--type-base-tracking);
   --type-base-size: 17px;
-  --type-base-leading: 1.65;
+  --type-base-leading: 1.4;
+  --type-body-size: 17px;
+  --type-body-leading: 1.4;
+  --type-service-size: 13px;
+  --type-service-leading: 1.4;
   --type-base-tracking: 0;
   --font-service: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
   --font-display: Arial, Helvetica, sans-serif;
@@ -48,25 +52,26 @@ h1, h2 {
 }
 
 .type-prototype {
-  font-size: 12px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-prototype-caption {
-  font-size: inherit;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-menu-option {
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-menu-button {
-  font-size: 14px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-home-page {
-  --home-body-size: 16px;
-  --home-body-leading: 1.72;
   font-family: var(--font-display);
   line-height: normal;
 }
@@ -78,19 +83,20 @@ h1, h2 {
 }
 
 .type-home-button {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-family: inherit;
-  font-size: 15px;
-  line-height: 1.3;
   font-weight: 700;
 }
 
 .type-home-body {
-  font-size: var(--home-body-size);
-  line-height: var(--home-body-leading);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-home-footer {
-  font-size: 12px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   letter-spacing: .015em;
 }
 
@@ -101,25 +107,28 @@ h1, h2 {
 }
 
 .type-interview-caption {
-  font-size: 13px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   font-weight: 400;
   letter-spacing: .005em;
 }
 
 .type-interview-stage {
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   font-weight: 700;
-  font-size: 12px;
   letter-spacing: .035em;
 }
 
 .type-interview-count {
-  font-size: 14px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   font-variant-numeric: tabular-nums;
 }
 
 .type-situation {
-  font-size: 16px;
-  line-height: 1.48;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-weight: 400;
 }
 
@@ -130,10 +139,10 @@ h1, h2 {
 }
 
 .type-option {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-weight: 400;
   font-family: inherit;
-  line-height: 1.4;
-  font-size: 15px;
 }
 
 .type-option-letter {
@@ -143,15 +152,15 @@ h1, h2 {
 }
 
 .type-interview-button {
-  line-height: normal;
-  font-size: 16px;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-weight: 700;
   font-family: var(--font-control);
 }
 
 .type-hint {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-hint-emphasis {
@@ -159,42 +168,45 @@ h1, h2 {
 }
 
 .type-interview-footer {
-  font-size: 11px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-portrait {
-  font-size: 15px;
-  line-height: 1.68;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-result-lead {
-  font-size: 12px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-specs {
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-story {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-result-button {
-  line-height: normal;
-  font-size: 15px;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-weight: 700;
   font-family: var(--font-control);
 }
 
 .type-source {
-  font-size: 12px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-attribution {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-hex-title {
@@ -211,12 +223,13 @@ h1, h2 {
 }
 
 .type-hex-intro {
-  font-size: 13px;
-  line-height: 1.58;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-code-label {
-  font-size: 11px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   letter-spacing: .1em;
   font-weight: 700;
 }
@@ -234,11 +247,13 @@ h1, h2 {
 }
 
 .type-code-note {
-  font-size: 10px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
 }
 
 .type-trigram-label {
-  font-size: 10px;
+  font-size: var(--type-service-size);
+  line-height: var(--type-service-leading);
   letter-spacing: .07em;
   font-weight: 700;
   text-transform: uppercase;
@@ -251,8 +266,8 @@ h1, h2 {
 }
 
 .type-trait {
-  font-size: 12px;
-  line-height: 1.48;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-exit-dialog {
@@ -268,14 +283,15 @@ h1, h2 {
 }
 
 .type-exit-body {
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
 }
 
 .type-exit-button {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-family: var(--font-exit-button);
   font-weight: 700;
-  font-size: 14px;
 }
 
 .type-status-title {
@@ -287,10 +303,10 @@ h1, h2 {
 }
 
 .type-status-body {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
   font-family: var(--font-system);
-  font-size: 16px;
   font-weight: 400;
-  line-height: normal;
 }
 
 @media (min-width: 768px) {
@@ -310,32 +326,14 @@ h1, h2 {
     --heading-1-size: clamp(27px, 7.4vw, 36px);
   }
 
-  .type-home-page {
-    --home-body-leading: 1.5;
-  }
-
   .type-brand {
     font-size: clamp(15px, 3.9vw, 18px);
     line-height: 1.2;
-  }
-
-  .type-home-button {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .type-prototype-caption {
-    font-size: 11px;
   }
 }
 
 @media (min-width: 600px) {
   .type-hex-title {
     font-size: 25px;
-  }
-
-  .type-trait {
-    font-size: 13px;
   }
 }

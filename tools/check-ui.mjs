@@ -17,8 +17,11 @@ for (const [, text] of css) {
   }
 }
 for (const [file, text] of css) {
-  if (!['palettes.css', 'colors.css'].includes(file) && /#[\da-f]{3,8}\b|\brgba?\s*\(|:\s*(?:black|white)\s*[;)]/i.test(text)) {
+  if (file !== 'palettes.css' && /#[\da-f]{3,8}\b|\brgba?\s*\(|:\s*(?:black|white)\s*[;)]/i.test(text)) {
     errors.push(`${file}: literal color outside the named color registries`);
+  }
+  if (file !== 'palettes.css' && /var\(--palette-/.test(text)) {
+    errors.push(`${file}: direct palette reference bypasses the current theme`);
   }
   if (!['styles.css', 'fonts.css', 'typography.css'].includes(file) && /^\s*(?:font(?:-(?:family|size|weight|style|variant[\w-]*|stretch))?|line-height|letter-spacing|text-transform)\s*:/m.test(text)) {
     errors.push(`${file}: text properties belong in a named typography style`);

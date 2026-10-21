@@ -14,12 +14,10 @@
   --palette-graphite-accent: #E8A63A;
   --palette-graphite-contrast: #F2EEE5;
   --palette-graphite-detail: #71818A;
-  --color-black: #000000;
   --color-text-secondary: color-mix(in srgb, var(--color-contrast) 80%, var(--color-base));
   --color-border: color-mix(in srgb, var(--color-contrast) 25%, var(--color-base));
   --color-accent-soft: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
   --color-accent-hover: color-mix(in srgb, var(--color-accent) 88%, var(--color-contrast));
-  --color-on-accent: var(--color-base);
   --color-shadow: color-mix(in srgb, var(--color-detail) 20%, transparent);
 }
 
@@ -28,6 +26,10 @@
 :root,
 [data-palette='rice'] {
   color-scheme: light;
+  --color-dark: var(--palette-rice-contrast);
+  --color-on-accent: var(--palette-rice-base);
+  --color-card-scheme: dark;
+  --color-hero-text: var(--palette-rice-base);
   --color-base: var(--palette-rice-base);
   --color-surface: var(--palette-rice-surface);
   --color-accent: var(--palette-rice-accent);
@@ -36,6 +38,10 @@
 }
 
 [data-palette='jade'] {
+  --color-dark: var(--palette-jade-base);
+  --color-card-scheme: light;
+  --color-hero-text: var(--palette-jade-contrast);
+  --color-on-accent: var(--palette-jade-base);
   color-scheme: dark;
   --color-base: var(--palette-jade-base);
   --color-surface: var(--palette-jade-surface);
@@ -45,6 +51,10 @@
 }
 
 [data-palette='graphite'] {
+  --color-dark: var(--palette-graphite-base);
+  --color-card-scheme: light;
+  --color-hero-text: var(--palette-graphite-contrast);
+  --color-on-accent: var(--palette-graphite-base);
   color-scheme: dark;
   --color-base: var(--palette-graphite-base);
   --color-surface: var(--palette-graphite-surface);
