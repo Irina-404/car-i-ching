@@ -22,7 +22,7 @@ async function start() {
 async function question(id) {
   const [axis, ordinal] = id.split('.').map(Number);
   const q = bank.axes[axis - 1].questions[ordinal - 1];
-  const expected = q.role === 'forced' ? q.prompt : q.prompt.slice(q.situation.length).trim();
+  const expected = q.role === 'forced' ? [q.situation, q.prompt].filter(Boolean).join(' ') : q.prompt;
   await page.getByRole('heading', { name: expected, exact: true }).waitFor();
   assert.equal(await page.locator('.interview-choice').count(), q.options.length);
   assert.equal(await page.locator('.interview-hint').count(), q.role === 'forced' ? 0 : 1);

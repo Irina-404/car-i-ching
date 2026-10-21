@@ -73,8 +73,10 @@
 }
 
 .hex-dialog-intro {
-  margin: 0 0 20px;
-  color: var(--hex-modal-body);
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--hex-group-rule);
+  color: var(--hex-modal-muted);
 }
 
 .hex-code-label {

@@ -29,10 +29,10 @@ export default function InterviewScreen({ question, number, answer, heading, onS
     <section aria-labelledby="interview-ask">
       <div className={`interview-copy${isForced ? ' is-forced' : ''}`}>
         {isForced ? <h1 id="interview-ask" className="interview-final-question type-situation" ref={heading} tabIndex={-1}>
-          {question.prompt}
+          {[question.situation, question.prompt].filter(Boolean).join(' ')}
         </h1> : <>
           {question.situation && <p className="interview-situation type-situation">{question.situation}</p>}
-          <h1 id="interview-ask" className="interview-prompt type-question" ref={heading} tabIndex={-1}>{question.prompt.slice(question.situation.length).trim()}</h1>
+          <h1 id="interview-ask" className="interview-prompt type-question" ref={heading} tabIndex={-1}>{question.prompt}</h1>
         </>}
       </div>
       <div className="interview-choices" role="group" aria-label="Выбери один вариант ответа">

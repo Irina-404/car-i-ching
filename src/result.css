@@ -38,6 +38,7 @@ body:has(.result-screen) {
 }
 
 .result-hex {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +50,24 @@ body:has(.result-screen) {
   background: var(--result-accent);
   color: var(--result-body);
   transition: filter .15s;
+}
+
+.result-hex-hand {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  width: 27px;
+  height: 27px;
+  padding: 3px;
+  border: 1px solid var(--result-accent);
+  border-radius: 50%;
+  background: var(--result-paper);
+  fill: none;
+  stroke: var(--result-accent);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
 }
 
 .result-hexagram {

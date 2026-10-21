@@ -22,6 +22,18 @@ test('bank rejects missing axes, duplicated IDs, roles, empty text, wrong votes 
   }
 });
 
+test('situation and prompt can be edited independently without changing the profile', () => {
+  const edited = structuredClone(bank);
+  edited.axes[0].questions[0].situation = 'Новая преамбула.';
+  edited.axes[0].questions[0].prompt = 'Какой вариант выбираешь?';
+  edited.axes[1].questions[0].situation = '';
+  assert.doesNotThrow(() => validateQuestionBank(edited));
+  assert.equal(resolveProfile(coreAnswers(), edited), resolveProfile(coreAnswers(), bank));
+  const legacy = structuredClone(bank);
+  legacy.schemaVersion = 1;
+  assert.throws(() => validateQuestionBank(legacy));
+});
+
 test('all vote combinations on all six axes, including neutral and final override', () => {
   const bit = { A: 0, B: 1, C: null };
   for (let axis = 1; axis <= 6; axis++) for (const a of ['A', 'B', 'C']) for (const b of ['A', 'B', 'C']) {

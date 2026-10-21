@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tools/sync-questions.mjs && node --test tools/interview.test.mjs",
+    "test": "node --test tools/interview.test.mjs",
     "test:browser": "node tools/check-interview.mjs",
     "check:ui": "node tools/check-ui.mjs",
     "dev": "vite --open",

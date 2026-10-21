@@ -9,7 +9,7 @@ export function extractQuestions(spec) {
   for (const [, axis, ordinal, wording, optionsText] of blocks) {
     const emphasis = wording.indexOf('**');
     const situation = wording.slice(0, emphasis).trim();
-    const prompt = wording.replaceAll('**', '').trim();
+    const prompt = wording.slice(emphasis).replaceAll('**', '').trim();
     const options = [...optionsText.matchAll(/^- \*\*([АБВ])\.\*\* (.+)$/gm)].map(([, code, text], index) => ({
       code: ['A', 'B', 'C'][index], value: [0, 1, null][index], text: text.trim(),
     }));
@@ -18,10 +18,10 @@ export function extractQuestions(spec) {
     });
   }
   if (blocks.length !== 24) throw new Error('Expected 24 approved questions');
-  return { schemaVersion: 1, language: 'ru', axes };
+  return { schemaVersion: 2, language: 'ru', axes };
 }
 
 const expected = JSON.stringify(extractQuestions(readFileSync('automotive_book_of_changes_spec.md', 'utf8')), null, 2) + '\n';
 if (process.argv.includes('--write')) writeFileSync('data/questions.json', expected);
-else if (readFileSync('data/questions.json', 'utf8').replaceAll('\r\n', '\n') !== expected) throw new Error('Question bank differs from approved specification');
+else if (JSON.stringify(JSON.parse(readFileSync('data/questions.json', 'utf8'))) !== JSON.stringify(JSON.parse(expected))) throw new Error('Question bank differs from specification; JSON may contain newer editorial changes. Do not use --write unless replacing them is intended.');
 console.log('All 24 questions match the approved specification.');

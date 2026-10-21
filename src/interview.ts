@@ -16,14 +16,14 @@ export type QuestionBank = {
 export function validateQuestionBank(input: unknown): QuestionBank {
   const bank = input as QuestionBank;
   const fail = () => { throw new Error('Банк вопросов повреждён: проверьте оси, номера, роли, тексты и варианты ответов.'); };
-  if (!bank || bank.schemaVersion !== 1 || bank.language !== 'ru' || !Array.isArray(bank.axes) || bank.axes.length !== 6) return fail();
+  if (!bank || bank.schemaVersion !== 2 || bank.language !== 'ru' || !Array.isArray(bank.axes) || bank.axes.length !== 6) return fail();
   const keys = ['taskScale', 'temperament', 'environment', 'approach', 'priority', 'expression'];
   for (const [i, axis] of bank.axes.entries()) {
     if (!axis || axis.id !== i + 1 || axis.key !== keys[i] || !Array.isArray(axis.questions) || axis.questions.length !== 4) return fail();
     for (const [j, q] of axis.questions.entries()) {
       if (!q || q.id !== `${i + 1}.${j + 1}` || q.role !== ['core1', 'core2', 'clarifier', 'forced'][j]
         || typeof q.prompt !== 'string' || !q.prompt.trim() || typeof q.situation !== 'string'
-        || (q.situation && !q.prompt.startsWith(q.situation + ' ')) || !Array.isArray(q.options) || q.options.length !== (j === 3 ? 2 : 3)) return fail();
+        || !Array.isArray(q.options) || q.options.length !== (j === 3 ? 2 : 3)) return fail();
       for (const [k, option] of q.options.entries()) {
         if (!option || option.code !== ['A', 'B', 'C'][k] || option.value !== [0, 1, null][k] || typeof option.text !== 'string' || !option.text.trim()) return fail();
       }

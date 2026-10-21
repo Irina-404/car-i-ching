@@ -40,6 +40,7 @@
   --hex-modal-accent: var(--color-accent);
   --hex-modal-ink: var(--color-on-accent);
   --hex-modal-body: var(--color-on-accent);
+  --hex-modal-muted: color-mix(in srgb, var(--color-on-accent) 70%, var(--color-detail));
 }
 
 .exit-dialog {
