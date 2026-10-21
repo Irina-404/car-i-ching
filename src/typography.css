@@ -1,14 +1,36 @@
+/* Named text styles. Layout/color stay in screen stylesheets. */
+
 :root {
-  --heading-1-font: Arial, Helvetica, sans-serif;
+  font-family: var(--font-service);
+  font-size: var(--type-base-size);
+  line-height: var(--type-base-leading);
+  letter-spacing: var(--type-base-tracking);
+  --type-base-size: 17px;
+  --type-base-leading: 1.65;
+  --type-base-tracking: 0;
+  --font-service: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: Arial, Helvetica, sans-serif;
+  --font-system: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-exit: Arial, system-ui, sans-serif;
+  --font-exit-button: Arial, sans-serif;
+  --font-control: system-ui;
+  --heading-1-font: var(--font-display);
   --heading-1-size: clamp(29px, 3.1vw, 43px);
   --heading-1-weight: 700;
   --heading-1-leading: 1.12;
   --heading-1-tracking: -.035em;
-  --heading-2-font: Arial, Helvetica, sans-serif;
+  --heading-2-font: var(--font-display);
   --heading-2-size: 20px;
   --heading-2-weight: 700;
   --heading-2-leading: normal;
 }
+
+h1, h2 {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 .type-heading-1 {
   font-family: var(--heading-1-font);
   font-size: var(--heading-1-size);
@@ -16,6 +38,7 @@
   line-height: var(--heading-1-leading);
   letter-spacing: var(--heading-1-tracking);
 }
+
 .type-heading-2 {
   font-family: var(--heading-2-font);
   font-size: var(--heading-2-size);
@@ -23,6 +46,296 @@
   line-height: var(--heading-2-leading);
   letter-spacing: 0;
 }
-@media (min-width: 768px) { :root { --heading-2-size: 23px; } }
-@media (max-width: 1100px) { :root { --heading-1-size: clamp(25px, 3.1vw, 34px); } }
-@media (max-width: 767px) { :root { --heading-1-size: clamp(27px, 7.4vw, 36px); } }
+
+.type-prototype {
+  font-size: 12px;
+}
+
+.type-prototype-caption {
+  font-size: inherit;
+}
+
+.type-menu-option {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.type-menu-button {
+  font-size: 14px;
+}
+
+.type-home-page {
+  --home-body-size: 16px;
+  --home-body-leading: 1.72;
+  font-family: var(--font-display);
+  line-height: normal;
+}
+
+.type-brand {
+  font-size: clamp(13px, 1.65vw, 23px);
+  font-weight: 650;
+  letter-spacing: .005em;
+}
+
+.type-home-button {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.type-home-body {
+  font-size: var(--home-body-size);
+  line-height: var(--home-body-leading);
+}
+
+.type-home-footer {
+  font-size: 12px;
+  letter-spacing: .015em;
+}
+
+.type-system-page {
+  font-family: var(--font-system);
+  font-size: 16px;
+  line-height: normal;
+}
+
+.type-interview-caption {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .005em;
+}
+
+.type-interview-stage {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .035em;
+}
+
+.type-interview-count {
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.type-situation {
+  font-size: 16px;
+  line-height: 1.48;
+  font-weight: 400;
+}
+
+.type-question {
+  font-size: 21px;
+  line-height: 1.24;
+  font-weight: 750;
+}
+
+.type-option {
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.type-option-letter {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 750;
+}
+
+.type-interview-button {
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-control);
+}
+
+.type-hint {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.type-hint-emphasis {
+  font-weight: 600;
+}
+
+.type-interview-footer {
+  font-size: 11px;
+}
+
+.type-portrait {
+  font-size: 15px;
+  line-height: 1.68;
+}
+
+.type-result-lead {
+  font-size: 12px;
+}
+
+.type-specs {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.type-story {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.type-result-button {
+  line-height: normal;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-control);
+}
+
+.type-source {
+  font-size: 12px;
+}
+
+.type-attribution {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.type-hex-title {
+  font-size: 23px;
+  line-height: 1.14;
+  letter-spacing: -.03em;
+  font-weight: 750;
+}
+
+.type-close {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.type-hex-intro {
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+.type-code-label {
+  font-size: 11px;
+  letter-spacing: .1em;
+  font-weight: 700;
+}
+
+.type-code {
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.type-code-dash {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.type-code-note {
+  font-size: 10px;
+}
+
+.type-trigram-label {
+  font-size: 10px;
+  letter-spacing: .07em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.type-bit {
+  font-size: 27px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.type-trait {
+  font-size: 12px;
+  line-height: 1.48;
+}
+
+.type-exit-dialog {
+  font-family: var(--font-exit);
+  font-size: 16px;
+  line-height: normal;
+}
+
+.type-exit-title {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.type-exit-body {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.type-exit-button {
+  font-family: var(--font-exit-button);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.type-status-title {
+  font-family: var(--font-system);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.type-status-body {
+  font-family: var(--font-system);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --heading-2-size: 23px;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --heading-1-size: clamp(25px, 3.1vw, 34px);
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --heading-1-size: clamp(27px, 7.4vw, 36px);
+  }
+
+  .type-home-page {
+    --home-body-leading: 1.5;
+  }
+
+  .type-brand {
+    font-size: clamp(15px, 3.9vw, 18px);
+    line-height: 1.2;
+  }
+
+  .type-home-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .type-prototype-caption {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 600px) {
+  .type-hex-title {
+    font-size: 25px;
+  }
+
+  .type-trait {
+    font-size: 13px;
+  }
+}

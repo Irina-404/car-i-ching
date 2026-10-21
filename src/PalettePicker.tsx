@@ -15,7 +15,7 @@ export default function PalettePicker({ palette, onChange }: { palette: Palette;
     </summary>
     <fieldset className="palette-options">
       <legend className="sr-only">Палитра прототипа</legend>
-      {palettes.map(item => <label key={item.id} className={`palette-option ${palette === item.id ? 'is-selected' : ''}`}>
+      {palettes.map(item => <label key={item.id} className={`palette-option type-menu-option ${palette === item.id ? 'is-selected' : ''}`}>
         <input type="radio" name="palette" value={item.id} checked={palette === item.id} onChange={event => {
           onChange(item.id);
           const menu = event.currentTarget.closest('details');

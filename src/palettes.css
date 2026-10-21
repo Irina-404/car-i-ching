@@ -1,40 +1,54 @@
-/* Base colors: UI_SPEC.md §4.2. Components use the named roles below. */
-:root,
-[data-palette='rice'] {
-  color-scheme: light;
-  --color-base: #F2EBDD;
-  --color-surface: #D7C6A5;
-  --color-accent: #B64636;
-  --color-contrast: #252724;
-  --color-detail: #A9A18F;
-}
-
-[data-palette='jade'] {
-  color-scheme: dark;
-  --color-base: #102E2A;
-  --color-surface: #28574C;
-  --color-accent: #B89A60;
-  --color-contrast: #E9E1D0;
-  --color-detail: #171D1C;
-}
-
-[data-palette='graphite'] {
-  color-scheme: dark;
-  --color-base: #15191E;
-  --color-surface: #303943;
-  --color-accent: #E8A63A;
-  --color-contrast: #F2EEE5;
-  --color-detail: #71818A;
-}
-
 :root {
+  --palette-rice-base: #F2EBDD;
+  --palette-rice-surface: #D7C6A5;
+  --palette-rice-accent: #B64636;
+  --palette-rice-contrast: #252724;
+  --palette-rice-detail: #A9A18F;
+  --palette-jade-base: #102E2A;
+  --palette-jade-surface: #28574C;
+  --palette-jade-accent: #B89A60;
+  --palette-jade-contrast: #E9E1D0;
+  --palette-jade-detail: #171D1C;
+  --palette-graphite-base: #15191E;
+  --palette-graphite-surface: #303943;
+  --palette-graphite-accent: #E8A63A;
+  --palette-graphite-contrast: #F2EEE5;
+  --palette-graphite-detail: #71818A;
+  --color-black: #000000;
   --color-text-secondary: color-mix(in srgb, var(--color-contrast) 80%, var(--color-base));
   --color-border: color-mix(in srgb, var(--color-contrast) 25%, var(--color-base));
   --color-accent-soft: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
   --color-accent-hover: color-mix(in srgb, var(--color-accent) 88%, var(--color-contrast));
   --color-on-accent: var(--color-base);
-  --color-disabled-bg: color-mix(in srgb, var(--color-contrast) 12%, var(--color-base));
-  --color-disabled-text: color-mix(in srgb, var(--color-contrast) 55%, var(--color-base));
-  --color-overlay: color-mix(in srgb, var(--color-detail) 80%, transparent);
   --color-shadow: color-mix(in srgb, var(--color-detail) 20%, transparent);
+}
+
+/* Base colors: UI_SPEC.md §4.2. Components use the named roles below. */
+
+:root,
+[data-palette='rice'] {
+  color-scheme: light;
+  --color-base: var(--palette-rice-base);
+  --color-surface: var(--palette-rice-surface);
+  --color-accent: var(--palette-rice-accent);
+  --color-contrast: var(--palette-rice-contrast);
+  --color-detail: var(--palette-rice-detail);
+}
+
+[data-palette='jade'] {
+  color-scheme: dark;
+  --color-base: var(--palette-jade-base);
+  --color-surface: var(--palette-jade-surface);
+  --color-accent: var(--palette-jade-accent);
+  --color-contrast: var(--palette-jade-contrast);
+  --color-detail: var(--palette-jade-detail);
+}
+
+[data-palette='graphite'] {
+  color-scheme: dark;
+  --color-base: var(--palette-graphite-base);
+  --color-surface: var(--palette-graphite-surface);
+  --color-accent: var(--palette-graphite-accent);
+  --color-contrast: var(--palette-graphite-contrast);
+  --color-detail: var(--palette-graphite-detail);
 }

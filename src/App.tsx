@@ -1,5 +1,4 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import type { ReactNode } from 'react';
 import questionsData from './prototype-questions.json';
 import { loadDemoResult } from './prototype';
 import type { DemoQuestion, DemoResult } from './prototype';
@@ -7,24 +6,14 @@ import PalettePicker from './PalettePicker';
 import HomePage from './HomePage';
 import InterviewScreen from './InterviewScreen';
 import ResultScreen from './ResultScreen';
+import HexagramModal from './HexagramModal';
+import ExitInterviewModal from './ExitInterviewModal';
 import type { Palette } from './PalettePicker';
 
 type Screen = 'welcome' | 'core1' | 'core2' | 'clarifier' | 'forced' | 'result';
 const route: Screen[] = ['welcome', 'core1', 'core2', 'clarifier', 'forced', 'result'];
 const questions = questionsData as DemoQuestion[];
 const questionIndex: Partial<Record<Screen, number>> = { core1: 0, core2: 1, clarifier: 2, forced: 3 };
-
-function Modal({ title, children, onClose }: { title: string; children: ReactNode; onClose: () => void }) {
-  const ref = useRef<HTMLDialogElement>(null);
-  useEffect(() => { ref.current?.showModal(); }, []);
-  return <dialog ref={ref} className="modal" aria-labelledby="dialog-title" onCancel={event => { event.preventDefault(); onClose(); }}
-    onClick={event => { if (event.target === event.currentTarget) onClose(); }}>
-    <div className="modal-body">
-      <div className="modal-heading"><h2 id="dialog-title">{title}</h2><button className="icon-button" onClick={onClose} aria-label="Закрыть">×</button></div>
-      {children}
-    </div>
-  </dialog>;
-}
 
 export default function App() {
   const [palette, setPalette] = useState<Palette>('graphite');
@@ -33,6 +22,7 @@ export default function App() {
   const [result, setResult] = useState<DemoResult | null>(null);
   const [error, setError] = useState('');
   const [showHexagram, setShowHexagram] = useState(false);
+  const [showExit, setShowExit] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
   const firstRender = useRef(true);
   const currentQuestion = questions[questionIndex[screen] ?? -1];
@@ -45,12 +35,17 @@ export default function App() {
   }, [palette, screen]);
 
   useEffect(() => {
+    if (screen !== 'result') return;
     const controller = new AbortController();
-    loadDemoResult(controller.signal).then(setResult).catch(error => {
+    setResult(null);
+    setError('');
+    loadDemoResult(controller.signal).then(value => {
+      if (!controller.signal.aborted) setResult(value);
+    }).catch(error => {
       if (!controller.signal.aborted) setError(error instanceof Error ? error.message : 'Не удалось прочитать каталог.');
     });
     return () => controller.abort();
-  }, []);
+  }, [screen]);
 
   useEffect(() => {
     if (firstRender.current) { firstRender.current = false; return; }
@@ -62,21 +57,29 @@ export default function App() {
     setScreen(next);
   }
 
-  function restart() {
+  function clearInterview() {
     setAnswers({});
+    setResult(null);
+    setError('');
+    setShowHexagram(false);
+    setShowExit(false);
+  }
+
+  function restart() {
+    clearInterview();
     navigate('core1');
   }
 
   return <>
-    {screen === 'welcome' && <aside className="prototype-bar" aria-label="Навигация по прототипу">
-      <p><span className="prototype-dot" />Прототип M1 <span className="prototype-separator">/</span> <span>дизайн и переходы</span></p>
+    {screen === 'welcome' && <aside className="prototype-bar type-prototype" aria-label="Навигация по прототипу">
+      <p className="type-prototype-caption"><span className="prototype-dot" />Прототип M1 <span className="prototype-separator">/</span> <span>дизайн и переходы</span></p>
       <div className="prototype-controls">
       <PalettePicker palette={palette} onChange={setPalette} />
       <details className="screen-picker" name="prototype-controls"><summary>Смотреть экраны <span aria-hidden="true">⌄</span></summary>
         <nav aria-label="Экраны прототипа">{([
           ['welcome', 'Приветствие'], ['core1', 'Основной вопрос'],
           ['clarifier', 'Уточняющий вопрос'], ['forced', 'Прямой вопрос'], ['result', 'Результат · Fiat 500'],
-        ] as [Screen, string][]).map(([target, label]) => <button key={target} onClick={event => {
+        ] as [Screen, string][]).map(([target, label]) => <button className="type-menu-button" key={target} onClick={event => {
           navigate(target); event.currentTarget.closest('details')?.removeAttribute('open');
         }}>{label}</button>)}</nav>
       </details>
@@ -87,15 +90,15 @@ export default function App() {
       onStart={restart} /> : currentQuestion ? <InterviewScreen
         question={currentQuestion} number={screen === 'core1' || screen === 'clarifier' ? 1 : 2} answer={answers[currentQuestion.id]} heading={heading}
         onSelect={code => setAnswers(previous => ({ ...previous, [currentQuestion.id]: code }))}
-        onBack={() => navigate(route[route.indexOf(screen) - 1])}
+        onBack={() => screen === 'core1' ? setShowExit(true) : navigate(route[route.indexOf(screen) - 1])}
         onNext={() => navigate(route[route.indexOf(screen) + 1])} /> : <ResultScreen result={result} error={error} heading={heading}
       onHome={() => navigate('welcome')} onHexagram={() => setShowHexagram(true)} />}
 
-    {showHexagram && result && <Modal title="Шесть граней характера" onClose={() => setShowHexagram(false)}>
-      <p className="modal-intro">В этой карточке соединились такие предпочтения:</p>
-      <ol className="preferences">{result.preferences.map((text, index) => <li key={index}><span>{String(index + 1).padStart(2, '0')}</span>{text.charAt(0).toUpperCase() + text.slice(1)}</li>)}</ol>
-      <button className="button button-primary" onClick={() => setShowHexagram(false)}>Вернуться к карточке</button>
-    </Modal>}
+    {showHexagram && result && <HexagramModal result={result} onClose={() => setShowHexagram(false)} />}
+    {showExit && <ExitInterviewModal onStay={() => setShowExit(false)} onExit={() => {
+      clearInterview();
+      navigate('welcome');
+    }} />}
 
   </>;
 }

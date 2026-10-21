@@ -1,0 +1,191 @@
+.hex-dialog {
+  --hex-modal-inset: 19px;
+  --hex-modal-width: 360px;
+  width: min(calc(100% - 24px), var(--hex-modal-width));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 13px;
+  background: var(--hex-modal-amber);
+  color: var(--hex-modal-ink);
+  color-scheme: light;
+  overflow: hidden;
+}
+
+.hex-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.hex-dialog::backdrop {
+  background: var(--overlay-hex);
+}
+
+.hex-dialog-head {
+  flex: none;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 22px var(--hex-modal-inset) 15px;
+}
+
+.hex-dialog-title {
+  margin: 3px 0 0;
+}
+
+.hex-dialog-title:focus {
+  outline: none;
+}
+
+.hex-dialog-close {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--hex-modal-ink);
+}
+
+.hex-dialog-close:hover {
+  opacity: .7;
+}
+
+.hex-dialog-close:focus-visible {
+  outline: 3px solid var(--hex-modal-ink);
+  outline-offset: 3px;
+}
+
+.hex-dialog-content {
+  min-height: 0;
+  padding: 0 var(--hex-modal-inset) 25px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.hex-dialog-content:focus-visible {
+  outline: 2px solid var(--hex-modal-body);
+  outline-offset: -3px;
+}
+
+.hex-dialog-intro {
+  margin: 0 0 20px;
+  color: var(--hex-modal-body);
+}
+
+.hex-code-label {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.hex-code-groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.hex-code-trigram {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.hex-code-dash {
+  margin: 0 2px;
+}
+
+.hex-code-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 7px 0 22px;
+  text-align: center;
+  color: var(--hex-modal-body);
+}
+
+.hex-code-notes span {
+  border-top: 1px solid var(--hex-note-rule);
+  padding-top: 5px;
+}
+
+.hex-trigram-label {
+  color: var(--hex-modal-body);
+  margin: 0 0 2px;
+}
+
+.hex-trait {
+  display: grid;
+  grid-template-columns: 25px 62px minmax(0, 1fr);
+  gap: 7px;
+  align-items: center;
+  min-height: 67px;
+  padding: 9px 0;
+}
+
+.hex-trait + .hex-trait {
+  border-top: 1px solid var(--hex-trait-rule);
+}
+
+.hex-trait-symbol {
+  width: 62px;
+  height: 15px;
+  display: block;
+  fill: var(--hex-modal-body);
+}
+
+.hex-trait-text {
+  color: var(--hex-modal-ink);
+  overflow-wrap: anywhere;
+}
+
+.hex-trigram-gap {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.hex-trigram-gap::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: var(--hex-group-rule);
+}
+
+@media (min-width: 600px) {
+  .hex-dialog {
+    --hex-modal-width: 420px;
+    --hex-modal-inset: 25px;
+  }
+
+  .hex-dialog-head {
+    padding-top: 26px;
+  }
+
+  .hex-dialog-content {
+    padding-bottom: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hex-dialog[open] {
+    animation: hex-modal-in .16s ease-out;
+  }
+
+  @keyframes hex-modal-in {
+    from {
+      opacity: .5;
+      transform: translateY(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

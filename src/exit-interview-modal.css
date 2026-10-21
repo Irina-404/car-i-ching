@@ -1,0 +1,74 @@
+.exit-dialog {
+  width: min(328px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 24px 20px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--exit-paper);
+  color: var(--exit-ink);
+  color-scheme: light;
+  box-shadow: 0 18px 50px var(--shadow-exit);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.exit-dialog::backdrop {
+  background: var(--overlay-exit);
+}
+
+.exit-dialog h2 {
+  margin: 0 0 14px;
+}
+
+.exit-dialog p {
+  margin: 0 0 24px;
+  color: var(--exit-body);
+}
+
+.exit-dialog-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.exit-dialog-actions button {
+  min-height: 48px;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.exit-dialog-stay {
+  background: var(--exit-stay);
+  color: var(--exit-ink);
+}
+
+.exit-dialog-leave {
+  background: var(--exit-body);
+  color: var(--exit-paper);
+}
+
+.exit-dialog-actions button:focus-visible {
+  outline: 3px solid var(--exit-ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .exit-dialog[open] {
+    animation: exit-dialog-in .15s ease-out;
+  }
+
+  @keyframes exit-dialog-in {
+    from {
+      transform: translateY(8px);
+      opacity: .7;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
