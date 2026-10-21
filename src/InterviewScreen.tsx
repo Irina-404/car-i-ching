@@ -1,21 +1,21 @@
 import { useEffect, useRef } from 'react';
 import type { RefObject } from 'react';
-import type { DemoQuestion } from './prototype';
+import type { Answer, Question } from './interview';
 import './interview.css';
 
 export default function InterviewScreen({ question, number, answer, heading, onSelect, onBack, onNext }: {
-  question: DemoQuestion;
+  question: Question;
   number: number;
   answer?: string;
   heading: RefObject<HTMLHeadingElement | null>;
-  onSelect: (code: string) => void;
+  onSelect: (code: Answer) => void;
   onBack: () => void;
   onNext: () => void;
 }) {
   const confirming = useRef(false);
   useEffect(() => { confirming.current = false; }, [question.id]);
-  const hasNeutral = question.options.some(option => option.code === 'В');
-  const isCore = question.role === 'core';
+  const hasNeutral = question.options.some(option => option.value === null);
+  const isCore = question.role === 'core1' || question.role === 'core2';
   const isForced = question.role === 'forced';
 
   return <main id="main-content" className="interview-page type-system-page">
@@ -29,17 +29,17 @@ export default function InterviewScreen({ question, number, answer, heading, onS
     <section aria-labelledby="interview-ask">
       <div className={`interview-copy${isForced ? ' is-forced' : ''}`}>
         {isForced ? <h1 id="interview-ask" className="interview-final-question type-situation" ref={heading} tabIndex={-1}>
-          {[question.situation, question.prompt].filter(Boolean).join(' ')}
+          {question.prompt}
         </h1> : <>
           {question.situation && <p className="interview-situation type-situation">{question.situation}</p>}
-          <h1 id="interview-ask" className="interview-prompt type-question" ref={heading} tabIndex={-1}>{question.prompt}</h1>
+          <h1 id="interview-ask" className="interview-prompt type-question" ref={heading} tabIndex={-1}>{question.prompt.slice(question.situation.length).trim()}</h1>
         </>}
       </div>
       <div className="interview-choices" role="group" aria-label="Выбери один вариант ответа">
         {question.options.map(option => <button type="button" key={option.code}
           className={`interview-choice type-option${answer === option.code ? ' is-selected' : ''}`}
           aria-pressed={answer === option.code} onClick={() => onSelect(option.code)}>
-          <span className="interview-letter type-option-letter">{option.code}</span><span className="interview-answer">{option.text}</span>
+          <span className="interview-letter type-option-letter">{{ A: 'А', B: 'Б', C: 'В' }[option.code]}</span><span className="interview-answer">{option.text}</span>
         </button>)}
       </div>
     </section>

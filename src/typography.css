@@ -51,26 +51,6 @@ h1, h2 {
   letter-spacing: 0;
 }
 
-.type-prototype {
-  font-size: var(--type-service-size);
-  line-height: var(--type-service-leading);
-}
-
-.type-prototype-caption {
-  font-size: var(--type-service-size);
-  line-height: var(--type-service-leading);
-}
-
-.type-menu-option {
-  font-size: var(--type-service-size);
-  line-height: var(--type-service-leading);
-}
-
-.type-menu-button {
-  font-size: var(--type-service-size);
-  line-height: var(--type-service-leading);
-}
-
 .type-home-page {
   font-family: var(--font-display);
   line-height: normal;

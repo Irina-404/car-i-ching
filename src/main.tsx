@@ -6,7 +6,6 @@ import './palettes.css';
 import './colors.css';
 import './typography.css';
 import './styles.css';
-import './prototype.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode><App /></StrictMode>,

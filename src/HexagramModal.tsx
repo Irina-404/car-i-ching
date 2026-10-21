@@ -1,10 +1,10 @@
 import { Fragment, useRef } from 'react';
-import type { DemoResult } from './prototype';
+import type { ResultData } from './catalog';
 import { HexagramLine } from './Hexagram';
 import useModalDialog from './useModalDialog';
 import './hexagram-modal.css';
 
-export default function HexagramModal({ result, onClose }: { result: DemoResult; onClose: () => void }) {
+export default function HexagramModal({ result, onClose }: { result: ResultData; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);

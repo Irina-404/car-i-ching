@@ -1,19 +1,21 @@
 import { useEffect } from 'react';
 import type { RefObject } from 'react';
-import type { DemoResult } from './prototype';
+import type { ResultData } from './catalog';
 import Hexagram from './Hexagram';
 import './result.css';
 
-export default function ResultScreen({ result, error, heading, onHome, onHexagram }: {
-  result: DemoResult | null;
+export default function ResultScreen({ result, error, heading, onHome, onHexagram, onRetry }: {
+  result: ResultData | null;
   error: string;
   heading: RefObject<HTMLHeadingElement | null>;
   onHome: () => void;
   onHexagram: () => void;
+  onRetry: () => void;
 }) {
   useEffect(() => { if (result) heading.current?.focus({ preventScroll: true }); }, [result, heading]);
   return <main id="main-content" className="result-screen type-system-page">
     {error ? <div role="alert"><h1 className="type-status-title" ref={heading} tabIndex={-1}>Карточка не загрузилась</h1><p className="type-status-body">{error}</p>
+      <button className="result-return type-result-button" onClick={onRetry}>Попробовать ещё раз</button>
       <button className="result-return type-result-button" onClick={onHome}>Вернуться на главную</button></div>
       : !result ? <p role="status" className="type-status-body">Открываем карточку…</p> : <article>
         <div className="result-hero">

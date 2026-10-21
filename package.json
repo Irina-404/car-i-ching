@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node tools/sync-questions.mjs && node --test tools/interview.test.mjs",
+    "test:browser": "node tools/check-interview.mjs",
     "check:ui": "node tools/check-ui.mjs",
     "dev": "vite --open",
     "build": "tsc --noEmit && vite build",
@@ -19,6 +21,7 @@
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.1.2",
+    "playwright": "1.64.1",
     "typescript": "7.0.2",
     "vite": "8.3.4"
   }
