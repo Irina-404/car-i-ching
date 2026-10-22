@@ -8,7 +8,9 @@
     "test:browser": "node tools/check-interview.mjs",
     "check:ui": "node tools/check-ui.mjs",
     "dev": "vite --open",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && node tools/build-gallery.mjs --shared",
+    "build:gallery": "node tools/build-gallery.mjs",
+    "preview:gallery": "vite preview --outDir dist-gallery --port 4180 --open",
     "preview": "vite preview --open"
   },
   "dependencies": {

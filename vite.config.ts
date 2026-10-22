@@ -8,6 +8,17 @@ export default defineConfig({
   plugins: [
     react(),
     {
+      name: 'gallery-preview-directory',
+      configurePreviewServer(server) {
+        server.middlewares.use((request, response, next) => {
+          const url = new URL(request.url ?? '/', 'http://localhost');
+          if (url.pathname !== '/gallery') return next();
+          response.writeHead(302, { Location: `/gallery/${url.search}` });
+          response.end();
+        });
+      },
+    },
+    {
       name: 'copy-catalog-resources',
       apply: 'build',
       closeBundle() {
